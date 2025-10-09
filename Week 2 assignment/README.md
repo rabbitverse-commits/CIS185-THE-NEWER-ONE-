@@ -4,6 +4,7 @@ Kind of wish assignments were due at midnight for those of us who have other per
 ANYWAYS! 
 October 8th, 2025, @ 8:41 PM
 Created assignment skeleton, with basic HTML template from first assignment.
+Pasted notes from first assignment and commented them out for reference purposes only.
 Assignment notes here: 
 
 Project Requirements:
