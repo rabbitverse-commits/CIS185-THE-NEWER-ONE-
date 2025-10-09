@@ -2,11 +2,13 @@ NOTES AND OTHER THINGS FOR THIS ASSIGNMENT.
 OK so, I guess this is like a diary where I'll just write down all my thoughts since I have once again, failed to manage my time well because now I'm scrambling to get this done.
 Kind of wish assignments were due at midnight for those of us who have other personal reasons that get in the way, but it's still partially my fault for not managing mytime well.
 ANYWAYS! 
+
 October 8th, 2025, @ 8:41 PM
 Created assignment skeleton, with basic HTML template from first assignment.
 Pasted notes from first assignment and commented them out for reference purposes only.
-Assignment notes here: 
+Will need to replace figure image examples with my own images.
 
+Assignment notes here: 
 Project Requirements:
 
     Create a single-page personal portfolio
