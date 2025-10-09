@@ -12,8 +12,9 @@ Notes for tomorrow:
 -Copy letter for letter needed elements. Refer to readings.
 -Read about Flexbox and Grid and decide how you want to impliment them.
 -Will need to comment out code and hope that it'll be enough for now. Will work on it after turning it in though to try and make code that ACTUALLY WORKS.
+-I have no idea how to change the colors of this file, I am so sorry for the eyestrain.
 
-Assignment notes here: 
+((Assignment notes here: 
 Project Requirements:
 
     Create a single-page personal portfolio
@@ -55,5 +56,5 @@ Content Sections:
     Header: Name, tagline, navigation
     Hero/About: Introduction, brief bio
     Projects/Work: At least 3 project cards
-    Footer:
+    Footer:))
 
