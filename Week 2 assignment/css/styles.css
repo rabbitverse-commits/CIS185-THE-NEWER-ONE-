@@ -1,10 +1,9 @@
 
- /*
+/* this doesn't work for some reason
  {
   box-sizing: border-box;
 } 
-  */
- /* For some reason, this messes with the end of the comments.
+  
   style 
         body {
             font-family: Times New Roman, sans-serif;
@@ -26,15 +25,17 @@
             color: blue;
             font-size: 18px;
         }
-    style */
-      
-/* (CCS: FOR SECTION
+    style 
+*/
+
+ /*FOR SECTION */
 h1,
 h2 {
   margin: 0;
 }
-) */
 
+
+/* For images */
 figure {
   border: thin silver solid;
   display: flex;
@@ -78,11 +79,58 @@ figcaption {
   padding: 3px;
   text-align: center;
 }
+/* This ALSO doesn't work for some reason.
+<style>
+html, h1, h2, h3, nav, main, section, footer {font-family: 'Times New Roman', Times, serif;}
+{
+  width: 50px;
+top: 43px
+bottom: 0;
+height: 0;
+}
+</style>
+<body>
 
-/* *CSS Requirements:
+(FOR FLEX BOX)
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  display: flex;
+  background-color: lightblue;
+}
+.container > div {
+  background-color:#99e283
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
 
-    External stylesheet properly linked
-    CSS variables for consistent theming
-    Flexbox or Grid for layout
-    Both Flexbox and Grid should be used somewhere
-    Custom font (Google Fonts or similar)* */
+
+(FOR GRID)
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  background-color: lightblue;
+  padding: 10px;
+}
+.grid-container > div {
+  background-color:#99e283;
+  color:#000;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+*/

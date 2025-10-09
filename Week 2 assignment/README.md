@@ -14,19 +14,22 @@ Notes for tomorrow:
 -Will need to comment out code and hope that it'll be enough for now. Will work on it after turning it in though to try and make code that ACTUALLY WORKS.
 -I have no idea how to change the colors of this file, I am so sorry for the eyestrain.
 
+-------------------------------------------------------------------------------
 October 9th, 2025, @ 2:21 PM
 Won't be able to test code, since it'll mostly be commented out.
 Gonna put in as much code as I possibly can but it might be messy.
 Hopefully, next Tuesday might be a work day as well.... hopefully.... maybe??????
-Found a template on W3 schools that I tried to copy to better understand what I'm doing. Even used a portion from a previous assignment to help with some of this assignment.
+Found a template on W3 schools that I tried to copy to better understand what I'm doing. Used some of the reading examples as well in the styles file for flexbox and grid. Even used a portion from a previous assignment to help with some of this assignment.
 This assignment will look messy but that's mainly because of life and how much I have to do on my own. Even with a partner, I would still struggle with the coding due to not having enough time to properly understand it better. But that's on me.
 
+---------------------------------------------------------------------------------
 HOW GRID WOULD BE IMPLIMENTED: Grid would be used for the layout of the page, used to organize the way the page looks and make it look pleasing to the eye.
 
 HOW FLEXBOX WOULD BE IMPLIMENTED: To further help with how the webpage works and looks.
 
 HOW BOTH WOULD BE IMPLIMENTED: The technicalities would be in the index.html file, with the style in styles.css.
 
+----------------------------------------------------------------------------------
 ((Assignment notes here: 
 Project Requirements:
 
