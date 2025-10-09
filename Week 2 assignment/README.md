@@ -8,6 +8,11 @@ Created assignment skeleton, with basic HTML template from first assignment.
 Pasted notes from first assignment and commented them out for reference purposes only.
 Will need to replace figure image examples with my own images.
 
+Notes for tomorrow: 
+-Copy letter for letter needed elements. Refer to readings.
+-Read about Flexbox and Grid and decide how you want to impliment them.
+-Will need to comment out code and hope that it'll be enough for now. Will work on it after turning it in though to try and make code that ACTUALLY WORKS.
+
 Assignment notes here: 
 Project Requirements:
 
@@ -19,14 +24,14 @@ Project Requirements:
     Include custom CSS variables for colors/spacing
     README should indicate where and how Flexbox, Grid, are impliment
 
-File Structure:
+File Structure: (DONE)
 week2-assignment2/
 ├── index.html
 ├── css/
 │ └── styles.css
 ├── images/
 │ └── (your images)
-└── README.md
+└── README.md 
 
 Required Elements
 HTML Requirements:
