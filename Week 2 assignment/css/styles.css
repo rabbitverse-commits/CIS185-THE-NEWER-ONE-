@@ -1,3 +1,27 @@
+
+ style 
+        body {
+            font-family: Times New Roman, sans-serif;
+            margin: 30px;
+            background-color: #f5f5f5;
+        }
+        
+        h1 {
+            color: #2a2f3c;
+            text-align: center;
+        }
+        
+        .highlight {
+            background-color: yellow;
+            padding: 10px;
+        }
+        
+        #special-paragraph {
+            color: blue;
+            font-size: 18px;
+        }
+    style
+      
 /* (CCS: FOR SECTION
 h1,
 h2 {
@@ -63,10 +87,10 @@ External Image (from the web):
 <img src="https://picsum.photos/200/300" alt="Random Placeholder">
 
 */
-/**CSS Requirements:
+/* *CSS Requirements:
 
     External stylesheet properly linked
     CSS variables for consistent theming
     Flexbox or Grid for layout
     Both Flexbox and Grid should be used somewhere
-    Custom font (Google Fonts or similar)/
+    Custom font (Google Fonts or similar)* */

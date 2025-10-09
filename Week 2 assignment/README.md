@@ -1,6 +1,6 @@
 NOTES AND OTHER THINGS FOR THIS ASSIGNMENT.
 OK so, I guess this is like a diary where I'll just write down all my thoughts since I have once again, failed to manage my time well because now I'm scrambling to get this done.
-Kind of wish assignments were due at midnight for those of us who have other personal reasons that get in the way, but it's still partially my fault for not managing mytime well.
+Kind of wish assignments were due at midnight for those of us who have other personal reasons that get in the way, but it's still partially my fault for not managing my time well.
 ANYWAYS! 
 
 October 8th, 2025, @ 8:41 PM
@@ -13,6 +13,11 @@ Notes for tomorrow:
 -Read about Flexbox and Grid and decide how you want to impliment them.
 -Will need to comment out code and hope that it'll be enough for now. Will work on it after turning it in though to try and make code that ACTUALLY WORKS.
 -I have no idea how to change the colors of this file, I am so sorry for the eyestrain.
+
+October 9th, 2025, @ 2:21 PM
+Won't be able to test code, since it'll mostly be commented out.
+Gonna put in as much code as I possibly can but it might be messy.
+Hopefully, next Tuesday might be a work day as well.... hopefully.... maybe??????
 
 ((Assignment notes here: 
 Project Requirements:
