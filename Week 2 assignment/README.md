@@ -22,6 +22,9 @@ Hopefully, next Tuesday might be a work day as well.... hopefully.... maybe?????
 Found a template on W3 schools that I tried to copy to better understand what I'm doing. Used some of the reading examples as well in the styles file for flexbox and grid. Even used a portion from a previous assignment to help with some of this assignment.
 This assignment will look messy but that's mainly because of life and how much I have to do on my own. Even with a partner, I would still struggle with the coding due to not having enough time to properly understand it better. But that's on me.
 
+4:59PM
+I keep trying to run my code but then I realized I was trying to run the CCS file. I ran the HTML file and OMG IT WORKS!!! Kindof! I'm so happy! It may not look like much but it's getting there! The rose picture won't work for some reason, and I don't think I did most of the formatting right with the grid or flexbox but it works!! It looks pretty good too! I just wish I gave myself more time to work on it some more and polish it better.
+
 ---------------------------------------------------------------------------------
 HOW GRID WOULD BE IMPLIMENTED: Grid would be used for the layout of the page, used to organize the way the page looks and make it look pleasing to the eye.
 
