@@ -1,8 +1,10 @@
 This README is for the compare and contrast of both Manual and Bootstrap implementations. 
 Below is the assignment itself, some feedback I got from my first assignment, and the coding from the slides needed to complete this assignment.
-I have sorted the coding as BOOTSTRAP and MANUAL so I know which peice of code came from what slide and how I can reference 
+I have sorted the coding as BOOTSTRAP and MANUAL so I know which peice of code came from what slide and reference that slide accordingly depending on what I'm coding.
+
+
 ------------------------------------------------------------------
-Assignment 3 notes!
+Assignment 3 notes below!
 Manual vs Bootstrap Implementation
 Due: Next Thursday
 📋 Your Mission: Create TWO Versions of Your Portfolio
