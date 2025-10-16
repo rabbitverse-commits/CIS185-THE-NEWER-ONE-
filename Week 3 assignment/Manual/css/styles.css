@@ -46,8 +46,8 @@ figure {
 }
 
 img {
-  max-width: 220px;
-  max-height: 150px;
+  max-width: 200px;
+  max-height: 130px;
 }
 
 figcaption {
@@ -63,13 +63,13 @@ figure {
   display: flex;
   flex-flow: column;
   padding: 5px;
-  max-width: 220px;
+  max-width: 200px;
   margin: auto;
 }
 
 img {
-  max-width: 220px;
-  max-height: 150px;
+  max-width: 200px;
+  max-height: 130px;
 }
 
 figcaption {

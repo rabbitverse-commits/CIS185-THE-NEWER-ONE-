@@ -44,7 +44,8 @@ Getting Started - Add One Line!
 Key Concept: Bootstrap uses classes to style elements
 Just add class names to your HTML elements!
 
-
+--------------------------------------------
+MANUAL SLIDE BELOW:
 The Most Important Meta Tag!
 What Each Part Means:
 
