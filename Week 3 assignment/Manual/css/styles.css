@@ -1,8 +1,27 @@
 
-/* this doesn't work for some reason
- {
+ * {
   box-sizing: border-box;
 } 
+  .left {
+    background-color: lightcoral;
+    padding: 20px;
+    float: left;
+    width: 20%;
+  }
+
+  .main{
+    background-color: lightpink;
+    padding: 20px;
+    float: left;
+    width: 60%;
+  }
+
+  .right{
+    background-color: lightgreen;
+    padding: 20px;
+    float: left;
+    width: 20%;
+  }
   
   style 
         body {
@@ -17,16 +36,16 @@
         }
         
         .highlight {
-            background-color: yellow;
+            background-color: lightgoldenrodyellow;
             padding: 10px;
         }
         
         #special-paragraph {
-            color: blue;
+            color: lightsalmon;
             font-size: 18px;
         }
     style 
-*/
+
 
  /*FOR SECTION */
 h1,

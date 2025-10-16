@@ -7,13 +7,21 @@
 
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<!--Default styles (mobile-first approach)--> 
+.container { width: 100%; padding: 10px; } 
+
+<!--Tablet styles (768px and up)-->
+@media screen and (min-width: 768px) { .container { width: 750px; padding: 20px; } } 
+
+<!--Desktop styles (1024px and up)--> 
+@media screen and (min-width: 1024px) { .container { width: 960px; padding: 30px; } }
 
 <body>
-    <h1>Welcome to My Website! (or as much of a website it is now...)</h1>
-    <p class="highlight">This paragraph is highlighted.</p>
-    <p id="special-paragraph">This paragraph is special.</p>
-    <p>This is my first HTML page.</p>
-    <p>I'm learning web development!(AND I'M PANICKING!!!!!!! THIS CLASS IS GOING SO FAST AND I STILL HAVE NO IDEA WHAT'S HAPPENING!!!! AAAAAAAAAAA!!!!)</p>
+
+    <h1 style="font-size: 5vw;">Welcome to My Website! (or as much of a website it is now...)</h1> 
+    <p style="font-size: 2vw;">This is my first HTML page.</p>
+
+    <p>I'm learning web development!</p>
     <p>There'll be more someday! I promise!</p>
 </body>
 </html>
@@ -93,12 +101,16 @@
 
 <!---Figure and Figcaption-->
 
+ <img src="mermaidaesthetic.jpg" style="max-width:100%; height:auto;"> 
+
 <figure>
   <img
     src="D:/Marian Stuffs/School Work/CIS Marian classwork/Week 2 assignment/images/mermaidaesthetic.jpg"
     alt="Various Pictures of a Mermaid Aesthetic" />
   <figcaption>Various Pictures of a Mermaid Aesthetic</figcaption>
 </figure>
+
+ <img src="rainbowroses.jpg" style="max-width:100%; height:auto;"> 
 
 <figure>
   <img

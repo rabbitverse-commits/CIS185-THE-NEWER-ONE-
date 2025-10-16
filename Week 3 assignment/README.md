@@ -1,7 +1,12 @@
 This README is for the compare and contrast of both Manual and Bootstrap implementations. 
 Below is the assignment itself, some feedback I got from my first assignment, and the coding from the slides needed to complete this assignment.
 I have sorted the coding as BOOTSTRAP and MANUAL so I know which peice of code came from what slide and reference that slide accordingly depending on what I'm coding.
+-----------------------------
+The comparisons!
 
+Manual:
+
+Boostrap:
 
 ------------------------------------------------------------------
 Assignment 3 notes below!
@@ -11,10 +16,11 @@ Due: Next Thursday
 
     Version 1: Manual Responsive Design
     Take your Assignment 1 portfolio and manually add responsive features using:
-        Media queries (@media)
-        Flexible images (max-width)
-        Viewport units (vw, vh)
-        CSS Grid or Flexbox
+        Media queries (@media)[]
+        Flexible images (max-width) [Done with the code from the slides. Possibly in the wrong spot but I'm not sure.]
+        Viewport units (vw, vh) [Done? Hopefully. Plus, it won't work well in the css flie for some reason]
+        CSS Grid or Flexbox [Did I need to change the code that's already there? Probably, but not for now. I'll like.... get a tutor or something for that.]
+
     Version 2: Bootstrap Responsive Design
     Create a second version using Bootstrap 5 to handle responsiveness:
         Bootstrap grid system
