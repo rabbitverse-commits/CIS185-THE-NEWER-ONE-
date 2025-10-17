@@ -22,4 +22,8 @@ function categorizeLeafColors(leaves) {
     return colorCount;
 }
 
-/*Might use loop here*/
+/*Might use loop here
+
+TEACHER NOTES: 
+Problem 2, for countLeaves, the total being return is a string which shows what numbers were calculated. 
+I recommend using a string interpolation/template*/
