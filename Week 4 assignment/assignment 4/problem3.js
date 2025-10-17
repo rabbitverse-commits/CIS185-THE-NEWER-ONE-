@@ -18,3 +18,4 @@ function curveGrades(scores, curveAmount) {
     // Cap all scores at 100 (no score above 100)
     // Return new array, don't modify original
 }
+/*arrayssssss*/

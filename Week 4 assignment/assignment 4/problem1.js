@@ -18,3 +18,16 @@ function getTemperatureDescription(fahrenheit) {
     // 71-85: "Warm"
     // Above 85: "Hot"
 }
+
+/* // Temperature converter
+function celsiusToFahrenheit(celsius) {
+    return (celsius * 9/5) + 32;
+}// */
+
+/* // Calculate average
+function average(num1, num2, num3) {
+    let sum = num1 + num2 + num3;
+    return sum / 3;
+}// 
+Will need to use else-if statements
+*/

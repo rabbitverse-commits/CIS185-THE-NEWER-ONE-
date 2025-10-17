@@ -25,3 +25,5 @@ function createCheckerboard(size) {
     // XOXO
     // OXOX
 }
+
+/*Will need to refer to both CS hw assignment and week 4 tuesday slides for this.*/

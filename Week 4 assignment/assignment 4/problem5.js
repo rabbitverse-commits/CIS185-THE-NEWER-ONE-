@@ -18,3 +18,5 @@ function findSecondLargest(numbers) {
     // Find and return the second largest number
     // Return null if array has less than 2 unique values
 }
+
+/*arrayssss and return else if statements.*/

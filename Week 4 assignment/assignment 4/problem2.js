@@ -21,3 +21,5 @@ function categorizeLeafColors(leaves) {
     
     return colorCount;
 }
+
+/*Might use loop here*/
