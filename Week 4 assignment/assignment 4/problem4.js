@@ -26,4 +26,8 @@ function createCheckerboard(size) {
     // OXOX
 }
 
-/*Will need to refer to both CS hw assignment and week 4 tuesday slides for this.*/
+/*Will need to refer to both CS hw assignment and week 4 tuesday slides for this.
+
+HINTS:
+For the pyramid: - Spaces = height - row - 1 - Stars = 2 * row + 1 
+Combine each line with \n at the end. */

@@ -24,6 +24,7 @@ function categorizeLeafColors(leaves) {
 
 /*Might use loop here
 
-TEACHER NOTES: 
-Problem 2, for countLeaves, the total being return is a string which shows what numbers were calculated. 
-I recommend using a string interpolation/template*/
+HINTS:
+For the first function, notice the pattern changes after day 1. 
+For the second, you'll need to check if a color already exists in your object before counting. 
+*/
