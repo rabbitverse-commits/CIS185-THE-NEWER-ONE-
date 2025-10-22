@@ -31,3 +31,4 @@ function createCheckerboard(size) {
 HINTS:
 For the pyramid: - Spaces = height - row - 1 - Stars = 2 * row + 1 
 Combine each line with \n at the end. */
+console.log("String");
