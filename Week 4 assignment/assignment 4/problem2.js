@@ -10,8 +10,10 @@ function countLeaves(days) {
     // Day 4: 40 leaves (+10 from day 3)
     // Pattern: First day doubles, then +10 each day
     
+    
     let total = 0;
     // Use a for loop to calculate total
+
     
     return total;
 }
@@ -19,9 +21,11 @@ function countLeaves(days) {
 function categorizeLeafColors(leaves) {
     // leaves is an array of color strings
     // Count each color and return an object
+
     
     let colorCount = {};
     // Loop through array and count colors
+
     
     return colorCount;
 }
