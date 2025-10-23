@@ -62,17 +62,13 @@ function getTemperatureDescription(fahrenheit) {
     let convertedTempFahrenheit = celsiusToFahrenheit(currentTempCelsius);
     let convertedTempDescription = getTemperatureDescription(convertedTempFahrenheit);
 
+    //Shoes the results
     console.log(`\nOriginal Temperature: ${currentTempCelsius}°C.`);
     console.log(`Converted to Fahrenheit: ${convertedTempFahrenheit}°F.`);
     console.log(`Description: ${convertedTempDescription}`);
 
-/*
-Will need to use else-if statements
-*/
+ 
 
-//I'm trying to test the code, but nothing is popping up. 
-// So here is what I coded. 
-//I don't know if it works, but this what I got. 
 //I used Google AI to try and polish the coding. I did put the original,
 //unpolished coding will be below as a comment. I will do this for the
 //other problems as well.
