@@ -16,8 +16,8 @@ function fahrenheitToCelsius(fahrenheit) {
 
     //let sum = num1 + num2 + num3;
     //return sum / 3;
-    
-    //Nevermind
+
+    //Nevermind.
     return (fahrenheit - 32) * 5/9;
 }
 
@@ -56,3 +56,7 @@ function getTemperatureDescription(fahrenheit) {
 /*
 Will need to use else-if statements
 */
+
+//I can't seem to test the code properly, so here is what I coded.
+//I don't know if it works, but this what I got.
+//node commands in the terminal weren't working for me.
