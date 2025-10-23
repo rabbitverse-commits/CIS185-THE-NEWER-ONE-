@@ -67,7 +67,9 @@ For the second, you'll need to check if a color already exists in your object be
 
 //I used Google AI to try and polish the coding. I did put the original,
 //unpolished coding will be below as a comment. I will do this for the
-//other problems as well.
+//other problems as well, but this is just to show that I attempted to 
+//write my own code before getting help from AI since I struggle to 
+//visualize what the code should look like.
 
 /* 
 function countLeaves(days) {
