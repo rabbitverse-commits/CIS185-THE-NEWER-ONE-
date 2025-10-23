@@ -1,6 +1,6 @@
 // Problem 4: Pattern Generator
 // Marian Bambaloff
-// October 22, 2015
+// October 23, 2015
 
 function createPyramid(height) {
     // Build a centered pyramid of asterisks (*)

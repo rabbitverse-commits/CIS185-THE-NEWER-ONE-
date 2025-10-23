@@ -12,12 +12,7 @@ function celsiusToFahrenheit(celsius) {
 function fahrenheitToCelsius(fahrenheit) {
     // Convert Fahrenheit to Celsius
     // Formula: (F - 32) × 5/9
-    //Copied from slides because Math is hard.
-
-    //let sum = num1 + num2 + num3;
-    //return sum / 3;
-
-    //Nevermind.
+    //Copied from slides because Math is hard. 
     return (fahrenheit - 32) * 5/9;
 }
 
