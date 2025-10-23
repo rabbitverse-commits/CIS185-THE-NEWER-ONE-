@@ -1,3 +1,7 @@
+// Problem 5: Array Manipulator
+// Marian Bambaloff
+// October 22, 2015
+
 function reverseArray(arr) {
     // Return a new array with elements in reverse order
     // Don't use the built-in reverse() method!

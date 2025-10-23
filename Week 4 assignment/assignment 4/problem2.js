@@ -1,3 +1,7 @@
+// Problem 2:Fall Leaf Counter
+// Marian Bambaloff
+// October 22, 2015
+
 function countLeaves(days) {
     // Each day, leaves fall following this pattern:
     // Day 1: 10 leaves

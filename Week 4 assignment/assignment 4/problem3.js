@@ -1,3 +1,7 @@
+// Problem 3: Grade Calculator
+// Marian Bambaloff
+// October 22, 2015
+
 function calculateAverage(scores) {
     // Calculate and return the average of an array of scores
     // Handle empty array case (return 0)
