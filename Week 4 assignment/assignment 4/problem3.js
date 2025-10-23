@@ -56,7 +56,7 @@ function getLetterGrade(score) {
          //console.log//
          return ("C");
     }
-        // If score is bigger than 690, then it's a D.
+        // If score is bigger than 60, then it's a D.
         else if (score >= 60){
          //console.log//
          return ("D");
