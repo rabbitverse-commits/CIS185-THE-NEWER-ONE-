@@ -31,32 +31,32 @@ function getTemperatureDescription(fahrenheit) {
         return "It's freezing!";
     }  
         // 32-50: "Cold"
-        else if (temperature <= 50){
-        //console.log//
-        return ("It's cold!");
+            else if (temperature <= 50){
+            //console.log//
+            return ("It's cold!");
     }
         // 51-70: "Cool"
-         else if (temperature <= 70){
-         //console.log//
-         return  ("It's cool.");
+                else if (temperature <= 70){
+                //console.log//
+                return  ("It's cool.");
     }
         // 71-85: "Warm"
-        else if (temperature <= 85){
-         //console.log//
-         return  ("It's warm.");
+                    else if (temperature <= 85){
+                    //console.log//
+                    return  ("It's warm.");
     }
         // Above 85: "Hot"
         else if (temperature > 80){
          //console.log//
          return ("It's hot!");
     }
-
+        return (temperature)
 }
 
 /*
 Will need to use else-if statements
 */
 
-//I can't seem to test the code properly, so here is what I coded.
-//I don't know if it works, but this what I got.
-//node commands in the terminal weren't working for me.
+//I'm trying to test the code, but nothing is popping up. 
+// So here is what I coded. 
+//I don't know if it works, but this what I got. 
