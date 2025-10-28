@@ -50,92 +50,114 @@
               </fieldset>
               </form>
 
-        <function>
+
+            <!--FORM DATA SUMISSION AND VALIDATION BELOW-->
+       <!-- <function>
           validateForm() {
           let isValid =
           true;
+        -->
 
           <!--Check name -->
-          let name =
+          <!-- let name =
           document.getElementById('name').value; if (name.length
           < 2) { showError('name', 'Name must be at least 2 characters');
-          isValid = false; }
+          isValid = false; } -->
 
           <!-- // Check email -->
-          let email =
+          <!-- let email =
           document.getElementById('email').value; if (!email.includes('@') || !email.includes('.')) {
           showError('email', 'Please enter a valid email'); isValid
-          = false; }
+          = false; } -->
 
           <!-- // Check if terms accepted -->
-          let terms =
+         <!--  let terms =
           document.getElementById('terms');
           if (!terms.checked) { showError('terms', 'You must accept the terms'); isValid =
           false; }
 
-          return isValid; }
-            </function>
+          return isValid; } -->
+        
           
-          let emailInput =
+          <!-- let emailInput =
           document.getElementById('email');
           let errorMsg =
           document.getElementById('emailError'); emailInput.addEventListener('input',
           function() {
-          let email = emailInput.value;
+          let email = emailInput.value; -->
 
           <!-- // Simple email validation -->
-          if (!email.includes('@')) { errorMsg.textContent
+         <!--  if (!email.includes('@')) { errorMsg.textContent
           = 'Please include @ in email';
           errorMsg.style.color
           = 'red'; }
           else { errorMsg.textContent
           = '✓ Valid email'; errorMsg.style.color =
           'green'; } });
-            
+             -->
 
 
-          let form =
+          <!-- let form =
           document.getElementById('myForm'); form.addEventListener('submit',
-          function(event) {
+          function(event) { -->
           <!-- // Prevent default submission -->
-          event.preventDefault();
+          <!-- event.preventDefault(); -->
 
           <!-- // Get form data -->
-          let name =
-          document.getElementById('name').value;
+          <!-- let name =
+          document.getElementById('name').value; -->
 
           <!-- // Process the data -->
-          console.log('Form submitted with name:', name); });
+          <!-- console.log('Form submitted with name:', name); }); -->
 
           
 
           <!--Get the form-->
-          let form =
+         <!--  let form =
           document.getElementById('myForm'); form.addEventListener('submit',
-          function(event) { event.preventDefault();
+          function(event) { event.preventDefault(); -->
 
           <!-- // Get all form data at once -->
-          let formData =
+          <!-- let formData =
           new
-          FormData(form);
+          FormData(form); -->
 
           <!-- // Convert to object -->
-          let data = {}; formData.forEach((value,
+          <!-- let data = {}; formData.forEach((value,
           key) => { data[key] = value; });
 
-          console.log('All form data:', data); });
+          console.log('All form data:', data); }); -->
 
         <!--// Get input values -->
-          let username =
+          <!-- let username =
           document.getElementById('username').value; let email =
-          document.getElementById('email').value;
+          document.getElementById('email').value; -->
 
           <!-- // Get selected option -->
-          let selectBox =
+         <!--  let selectBox =
           document.getElementById('country');
           let selectedValue = selectBox.value; let selectedText = selectBox.options[selectBox.selectedIndex].text;
+          -->
 
           <!-- // Get checked checkboxes -->
-          let checkbox =
+          <!-- let checkbox =
           document.getElementById('agree');
           if (checkbox.checked) { console.log('User agreed!'); }
+
+          <function>
+          processForm() {
+          // Create data object
+          let formData = { name:
+          document.getElementById('name').value, email: document.getElementById('email').value, country: document.getElementById('country').value, newsletter: document.getElementById('newsletter').checked
+          };
+
+          // Display the data
+          console.log('Form Data:', formData);
+
+          // Show confirmation
+          alert(`Thanks ${formData.name}! We'll email you at
+            ${formData.email}`);
+
+          // Clear the form
+          document.getElementById('myForm').reset(); }-->
+         
