@@ -4,3 +4,138 @@
     <p class="text">Welcome</p>
   </body>
 </html>
+
+            <form
+              id="registrationForm">
+              <fieldset>
+              <legend>Halloween Party
+              Registration</legend>
+
+              <label
+              for="name">Name:</label>
+              <input
+              type="text"
+              id="name"
+              required>
+
+              <label
+              for="email">Email:</label>
+              <input
+              type="email"
+              id="email"
+              required>
+
+              <label
+              for="costume">Costume:</label>
+              <select
+              id="costume">
+              <option
+              value="vampire">Vampire</option>
+              <option
+              value="witch">Witch</option>
+              <option
+              value="ghost">Ghost</option>
+              </select>
+
+              <label
+              for="guests">Guests:</label>
+              <input
+              type="number"
+              id="guests"
+              min="1"
+              max="5">
+
+              <button
+              type="submit">Register</button>
+              </fieldset>
+              </form>
+
+        <function>
+          validateForm() {
+          let isValid =
+          true;
+
+          <!--Check name -->
+          let name =
+          document.getElementById('name').value; if (name.length
+          < 2) { showError('name', 'Name must be at least 2 characters');
+          isValid = false; }
+
+          <!-- // Check email -->
+          let email =
+          document.getElementById('email').value; if (!email.includes('@') || !email.includes('.')) {
+          showError('email', 'Please enter a valid email'); isValid
+          = false; }
+
+          <!-- // Check if terms accepted -->
+          let terms =
+          document.getElementById('terms');
+          if (!terms.checked) { showError('terms', 'You must accept the terms'); isValid =
+          false; }
+
+          return isValid; }
+            </function>
+          
+          let emailInput =
+          document.getElementById('email');
+          let errorMsg =
+          document.getElementById('emailError'); emailInput.addEventListener('input',
+          function() {
+          let email = emailInput.value;
+
+          <!-- // Simple email validation -->
+          if (!email.includes('@')) { errorMsg.textContent
+          = 'Please include @ in email';
+          errorMsg.style.color
+          = 'red'; }
+          else { errorMsg.textContent
+          = '✓ Valid email'; errorMsg.style.color =
+          'green'; } });
+            
+
+
+          let form =
+          document.getElementById('myForm'); form.addEventListener('submit',
+          function(event) {
+          <!-- // Prevent default submission -->
+          event.preventDefault();
+
+          <!-- // Get form data -->
+          let name =
+          document.getElementById('name').value;
+
+          <!-- // Process the data -->
+          console.log('Form submitted with name:', name); });
+
+          
+
+          <!--Get the form-->
+          let form =
+          document.getElementById('myForm'); form.addEventListener('submit',
+          function(event) { event.preventDefault();
+
+          <!-- // Get all form data at once -->
+          let formData =
+          new
+          FormData(form);
+
+          <!-- // Convert to object -->
+          let data = {}; formData.forEach((value,
+          key) => { data[key] = value; });
+
+          console.log('All form data:', data); });
+
+        <!--// Get input values -->
+          let username =
+          document.getElementById('username').value; let email =
+          document.getElementById('email').value;
+
+          <!-- // Get selected option -->
+          let selectBox =
+          document.getElementById('country');
+          let selectedValue = selectBox.value; let selectedText = selectBox.options[selectBox.selectedIndex].text;
+
+          <!-- // Get checked checkboxes -->
+          let checkbox =
+          document.getElementById('agree');
+          if (checkbox.checked) { console.log('User agreed!'); }
