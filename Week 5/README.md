@@ -22,3 +22,6 @@ I'll see if I can do the CSS on my own so I get that part of coding down better.
 Just found out that I can check the outline if a certain line of code doesn't look like it's working, and to understand it better as well. This is getting interesting. 
 
 I'mma code out the code that is just white lines (not this, the stuff in my html file... unless it needs to be in javascript?).
+
+2:48 PM
+Looking back at the slides, I realize I need a Javascript file to refer to. That is possibly why some of my code isn't working. It jstu says Javascript now but I see how I might go about this now.

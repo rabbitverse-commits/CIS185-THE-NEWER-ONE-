@@ -3,6 +3,10 @@
     <h1 id="title">Hello</h1>
     <p class="text">Welcome</p>
   </body>
+  
+<script src="Script.js">
+//Something goes here. IDK yet.
+</script>
 </html>
 
             <form
