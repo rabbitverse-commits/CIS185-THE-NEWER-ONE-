@@ -1,27 +1,15 @@
-DOM techniques and how I used them!
-(Plus little diary entries about my train of thought)
-((Diary will be below the MOD techniques so it's out of the way.))
+NEVER MIND IT'S A MID-TERM!
 
-MOD TECHNIQUES AND HOW I USED THEM
+OK SO! 
+I've got two ideas for the mid-term:
+1) One is a cute personality quiz based on some of my favorite aesthetics.
+ or
+2) I make a massive hub of Pokemon birthday quizzes that calculate what kind of pokemon shares your birthday.
+    I might put down how each method works but the person might as well calculate it themselves. 
+    Still, it might also be cool if the person could see how each method works so that way they know why they get different pokemon from different methods.
 
-October 28th, 2025:
-Just started the homework assignment at 11-ish in the morning, got all the files needed put together first. Now I just gotta code.
+Or
+3) A combination of both ideas, where it's like a partonus quiz, but with pokemon. Or maybe a pokemon team that's based on what aesthetic you get.
+Or maybe both, and they can pick between the two different acitivities they wanna do.
 
-I have no idea what exactly we need to do, as the assignment at the the end of week 5's thursdays slides just tells us what to create.
-
-I know it's a form, with validation and data submission with DOM techniques but I still feel lost on what exacly we're doing. The example from Thursdays slides look like what we need to do, so I might copy it with my own flair, but I'm not sure.
-
-Hopefully, it'll be another work day for class. Otherwise, I'll have to ask for help after class.
-
-1:45 PM
-Took some examples from Week 5's slides to set up what I believe the code should look like. I still don't know what's expected of me in terms of DOM techniques, but I think I understand the assignment SOMEWHAT. 
-
-I'll see if I can do the CSS on my own so I get that part of coding down better. Hopefully, it's formatted right too, that's another thing I'm not sure on.
-
-2:24 PM
-Just found out that I can check the outline if a certain line of code doesn't look like it's working, and to understand it better as well. This is getting interesting. 
-
-I'mma code out the code that is just white lines (not this, the stuff in my html file... unless it needs to be in javascript?).
-
-2:48 PM
-Looking back at the slides, I realize I need a Javascript file to refer to. That is possibly why some of my code isn't working. It jstu says Javascript now but I see how I might go about this now.
+To put this into perspective, 
