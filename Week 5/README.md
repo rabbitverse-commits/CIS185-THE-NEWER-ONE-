@@ -115,8 +115,7 @@ PROJECT READ ME DETAILS BELOW!!
           - Claude: Assisted with color palette selection 
           - None: Did not use any AI tools [Be honest and specific about AI
           assistance]
-          
-
+           
           ## 8. Future Improvements
           What would you add with more time? 
           - Online ordering system 
