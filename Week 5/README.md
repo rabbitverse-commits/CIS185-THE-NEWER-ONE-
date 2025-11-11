@@ -89,10 +89,10 @@ PROJECT READ ME DETAILS BELOW!!
           - Feature 4: (e.g., Responsive design for mobile)
 
           ## 4. Technologies Used
-          - HTML5 (semantic structure) 
-          - CSS (styling) 
-          - JavaScript (form validation, image gallery) 
-          - [Any other tools/libraries]
+          - HTML (For the base coding and words and buttons.) 
+          - CSS (For looking pretty.) 
+          - JavaScript (For the more 'complex' coding for both the CSS and HTML file.) 
+          - I guess GoogleAI, depsite there being a section about AI usage.
 
           ## 5. File Structure
           Explain your organization: 
@@ -102,8 +102,10 @@ PROJECT READ ME DETAILS BELOW!!
           - Menu page 
           - about.html 
           - About us page 
+
           - css/style.css 
           - Main stylesheet
+          
           - js/script.js
           - JavaScript functionality
 
