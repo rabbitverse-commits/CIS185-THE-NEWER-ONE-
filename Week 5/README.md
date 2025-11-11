@@ -63,21 +63,24 @@ You'll be put in odd scenarios depicting different side characters in the world 
 For now, I wanna make sure the adventure works and nothing breaks (after I start on it). But I am definitely using this chance to get feedback on a world I want to create for the future, so what better way to do that than to use it as a target for my mid-term project?
 
 --------------------------------------------------------------------------------------------------------------------------------------
+Nov 11th, 2025
+Welp, guess I'm doing the "Do-It-All-At-The-Last-Minute" work flow tactic since I haven't given myself enough time to work on the project itself (though to be fair, I had DND on Sunday). So my goal is to get as much as I can get done for the next three days and turn in what I have, no matter how unpolished it is. Luckily, (and fingers crossed I don't jinx myself. Knock on wood.) once I have it all drawn out and figured out visually what I want, the rest of the project should be easy-peezy. I might even go as far as to include the character portraits and what not. I wish I gave myself more time to draw out these characters, but it's fine. Even the story itself isn't as fully polished as the website is gonna be.
+--------------------------------------------------------------------------------------------------------------------------------------
 PROJECT READ ME DETAILS BELOW!!
  # Project Name: Randomly Genereated AI: A Totally Normal Life// A text-based adventure game
           ## CIS 185 - Midterm Project
           ## Author: Marian Bambaloff
-          ## Date: Nov 13th, 2025
+          ## Date: Nov 13th, 2025, at 12:00AM Midnight
 
           ---
 
           ## 1. Project Description
           What is your website about? (2-3 sentences) 
-          
+          OK, so looking back on it now, I basically made a text-based adventure where your choices matter, but the result is what aesthetic you are, instead of what ending you got. But at the same time, I guess it's the same as a personality quiz, but with a fancier feel to it, since it's a text-based adventure and not an actual quiz. But it's also a quiz if you think about how your input matters on what result you get, which is similar to what a text-based adventure is... My head slightly hurts now, but it's a text-based adventure aesthetic personality quiz, for a lack of a better title. You read situation, pick an option, and continue until you get your result. accompanied with the character corresponding to it, and a link to the aesthetic itself on the "official" aesthetic wiki. For more information, I would look at the diagram I will somehow figure out how to attach to this project. But yeah, fancy personality quiz with a story attached and characters form said story. Plus a secret result you can get... Somehow.
 
           ## 2. Target Audience
           Who will use your website? Why? 
-          
+          Honestly, only people who want to take a fun personality quiz, or want to read some snippets of my story would use my site. Or people similar to that. I don't really know who will use it, honestly. I'm just using it as a way to flesh out the concepts of a story idea I have.
 
           ## 3. Main Features
           - Feature 1: (e.g., Interactive menu with prices) 
@@ -87,7 +90,7 @@ PROJECT READ ME DETAILS BELOW!!
 
           ## 4. Technologies Used
           - HTML5 (semantic structure) 
-          - CSS3 (styling, animations) 
+          - CSS (styling) 
           - JavaScript (form validation, image gallery) 
           - [Any other tools/libraries]
 
@@ -110,11 +113,7 @@ PROJECT READ ME DETAILS BELOW!!
 
           ## 7. AI Tools Used
           List any AI tools and how you used them: 
-          - ChatGPT: Used for debugging JavaScript form validation 
-          - GitHub Copilot: Helped with CSS grid layout suggestions 
-          - Claude: Assisted with color palette selection 
-          - None: Did not use any AI tools [Be honest and specific about AI
-          assistance]
+          - GoogleAI from here on out: I used GoogleAI to help with the structure of all my code throughout all my files, as well as help me figure out WHAT code I needed to use for the files.
            
           ## 8. Future Improvements
           What would you add with more time? 
