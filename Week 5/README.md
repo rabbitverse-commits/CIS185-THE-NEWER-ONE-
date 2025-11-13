@@ -111,17 +111,17 @@ PROJECT READ ME DETAILS BELOW!!
 
           ## 6. Challenges Faced
           What was difficult? How did you solve it? 
-          
+          My coding and time management were abysmal 
 
           ## 7. AI Tools Used
           List any AI tools and how you used them: 
-          - GoogleAI from here on out: I used GoogleAI to help with the structure of all my code throughout all my files, as well as help me figure out WHAT code I needed to use for the files.
+          - GoogleAI from here on out: I used GoogleAI to help with the structure of all my code throughout all my files, as well as help me figure out WHAT code I needed to use for the files. So bascially, I had it create templates for me to use and work backwards on in order to understand more about what I'm coding exactly. I filled in the blanks and changed a few things but I (or I tried to) comment on different lines of code to show my understanding.
            
           ## 8. Future Improvements
           What would you add with more time? 
-          - Online ordering system 
-          - Customer reviews section 
-          - Newsletter signup
+          - Character pictures 
+          - More description
+          - Polished Look
 
           ## 9. Credits
           - Images from [source] 

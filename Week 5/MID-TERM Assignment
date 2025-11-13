@@ -1,3 +1,26 @@
-<html>
-
-</html>  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="quiz-container">
+            <h1 id="question-text">Question Text Will Go Here</h1>
+            <div id="choice-buttons" class="btn-grid">
+                <!-- Radio buttons will be dynamically inserted here by JavaScript -->
+            </div>
+            <button id="next-btn" class="btn">Next</button>
+        </div>
+        <div id="results-container" style="display: none;">
+            <h1 id="results-title">Quiz Results</h1>
+            <p id="results-text">Your adventure result will be shown here.</p>
+            <button id="restart-btn" class="btn">Restart Quiz</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
