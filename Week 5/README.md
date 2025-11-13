@@ -106,7 +106,7 @@ PROJECT READ ME DETAILS BELOW!!
 
           ## 6. Challenges Faced
           What was difficult? How did you solve it? 
-          My coding and time management were abysmal this time around and I realized too late just how much work I was putting into this assignment. So, at the last minute, I had to use AI to help with the coding part since I struggle to code on my own. My plan was to look at the code AI made, and make comments on what does what to better understand and reference for future coding attempts. I really should've gave myself more time to do this but I was too focused on my other assignments to notice what day it was. Plus, with how busy I was on the day the assignment is due, I am be surprised I'm managing to get it turned in before 10 PM.
+          My coding and time management were abysmal this time around and I realized too late just how much work I was putting into this assignment. So, at the last minute, I had to use AI to help with the coding part since I struggle to code on my own. My plan was to look at the code AI made, and make comments on what does what to better understand and reference for future coding attempts. I really should've gave myself more time to do this but I was too focused on my other assignments to notice what day it was. Plus, with how busy I was on the day the assignment is due, I am be surprised I'm managing to get it turned in before 11:50 PM.
 
           ## 7. AI Tools Used
           List any AI tools and how you used them: 
