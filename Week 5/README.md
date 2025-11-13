@@ -114,10 +114,10 @@ PROJECT READ ME DETAILS BELOW!!
            
           ## 8. Future Improvements
           What would you add with more time? 
-          - Character pictures 
-          - Aesthetic pictures that match the results better in stead of one generic picture.
-          - More description
-          - A more polished Look
+          - Character pictures.
+          - Result images.
+          - More descriptions of questions, choices and results.
+          - A more polished look overall.
 
           ## 9. Credits
           - Images from pinterest and google
