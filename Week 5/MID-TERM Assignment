@@ -3,24 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adventure Quiz</title>
+    <title>AI Character Quiz</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <div id="quiz-container">
-            <h1 id="question-text">Question Text Will Go Here</h1>
-            <div id="choice-buttons" class="btn-grid">
-                <!-- Radio buttons will be dynamically inserted here by JavaScript -->
-            </div>
-            <button id="next-btn" class="btn">Next</button>
+        <!-- Title Page -->
+        <div id="title-page">
+            <h1>Randomly Generated AI: A Totally Normal Life Official Character Quiz!</h1>
+            <h2>What Aesthetic and Corresponding Character are You?</h2>
+            <button id="start-btn">Start Quiz</button>
         </div>
+
+        <!-- Quiz Area -->
+        <div id="quiz-container" style="display: none;">
+            <div id="question-area">
+                <p id="question-text"></p>
+                <div id="choices-container" class="choices">
+                    <!-- Radio buttons and labels will be generated here by JavaScript -->
+                </div>
+            </div>
+            <button id="next-btn" style="display: none;">Next</button>
+        </div>
+
+        <!-- Results Area -->
         <div id="results-container" style="display: none;">
-            <h1 id="results-title">Quiz Results</h1>
-            <p id="results-text">Your adventure result will be shown here.</p>
-            <button id="restart-btn" class="btn">Restart Quiz</button>
+            <h1 id="result-title"></h1>
+            <p id="result-description"></p>
+            <button id="restart-btn">Restart Quiz</button>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
+

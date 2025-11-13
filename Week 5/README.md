@@ -82,11 +82,11 @@ PROJECT READ ME DETAILS BELOW!!
           Who will use your website? Why? 
           Honestly, only people who want to take a fun personality quiz, or want to read some snippets of my story would use my site. Or people similar to that. I don't really know who will use it, honestly. I'm just using it as a way to flesh out the concepts of a story idea I have.
 
-          ## 3. Main Features
-          - Feature 1: (e.g., Interactive menu with prices) 
-          - Feature 2: (e.g., Contact form for reservations) 
-          - Feature 3: (e.g., Photo gallery of the café) 
-          - Feature 4: (e.g., Responsive design for mobile)
+          ## 3. Main Features (I don't really understand what this question is asking.)
+          - Feature 1: Multiple choice options
+          - Feature 2: The questions
+          - Feature 3: Photos of each aesthetic
+          - Feature 4: Responsive designs for most devices
 
           ## 4. Technologies Used
           - HTML (For the base coding and words and buttons.) 
@@ -94,14 +94,9 @@ PROJECT READ ME DETAILS BELOW!!
           - JavaScript (For the more 'complex' coding for both the CSS and HTML file.) 
           - I guess GoogleAI, depsite there being a section about AI usage.
 
-          ## 5. File Structure
-          Explain your organization: 
-          - index.html 
-          - Homepage 
-          - menu.html 
-          - Menu page 
-          - about.html 
-          - About us page 
+          ## 5. File Structure (Also don't understand what this question is asking.)
+          Explain your organization:
+          - index.html  
 
           - css/style.css 
           - Main stylesheet
@@ -111,7 +106,7 @@ PROJECT READ ME DETAILS BELOW!!
 
           ## 6. Challenges Faced
           What was difficult? How did you solve it? 
-          My coding and time management were abysmal 
+          My coding and time management were abysmal this time around and I realized too late just how much work I was putting into this assignment. So, at the last minute, I had to use AI to help with the coding part since I struggle to code on my own. My plan was to look at the code AI made, and make comments on what does what to better understand and reference for future coding attempts. I really should've gave myself more time to do this but I was too focused on my other assignments to notice what day it was. Plus, with how busy I was on the day the assignment is due, I am be surprised I'm managing to get it turned in before 10 PM.
 
           ## 7. AI Tools Used
           List any AI tools and how you used them: 
@@ -120,13 +115,12 @@ PROJECT READ ME DETAILS BELOW!!
           ## 8. Future Improvements
           What would you add with more time? 
           - Character pictures 
+          - Aesthetic pictures that match the results better in stead of one generic picture.
           - More description
-          - Polished Look
+          - A more polished Look
 
           ## 9. Credits
-          - Images from [source] 
-          - Icons from [source] 
-          - Tutorials used: [links]
+          - Images from pinterest and google
           - AI assistance as noted in Section 7
         (Images for characters would be from Picrew, Doll Divine, or some other dress up game).
         (Moodboards for aesthetics will be done by me).

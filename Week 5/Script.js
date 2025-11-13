@@ -1,191 +1,200 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const questionTextElement = document.getElementById('question-text');
-    const choiceButtonsElement = document.getElementById('choice-buttons');
-    const nextButton = document.getElementById('next-btn');
+    const startBtn = document.getElementById('start-btn');
+    const nextBtn = document.getElementById('next-btn');
+    const restartBtn = document.getElementById('restart-btn');
+    const titlePage = document.getElementById('title-page');
     const quizContainer = document.getElementById('quiz-container');
     const resultsContainer = document.getElementById('results-container');
-    const resultsTitle = document.getElementById('results-title');
-    const resultsText = document.getElementById('results-text');
-    const restartButton = document.getElementById('restart-btn');
+    const questionText = document.getElementById('question-text');
+    const choicesContainer = document.getElementById('choices-container');
+    const resultTitle = document.getElementById('result-title');
+    const resultDescription = document.getElementById('result-description');
 
     let currentQuestionIndex = 0;
-    // Points accumulated for each of the 8 potential results (A-H)
-    let resultPoints = { A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0 };
-    let selectedChoice = null;
+    // Object to store scores for each of the 8 possible results
+    let scores = {
+        resultA: 0, resultB: 0, resultC: 0, resultD: 0, 
+        resultE: 0, resultF: 0, resultG: 0, resultH: 0
+    };
 
-    // Define the quiz questions, choices, and the points each choice adds to a result
     const questions = [
         {
-            question: "Q1: What environment do you prefer?",
+            question: "Q1: What's your ideal weekend activity?",
             choices: [
-                { text: "Forest", points: { A: 1, E: 1 } },
-                { text: "Ocean", points: { B: 1, F: 1 } },
-                { text: "Mountains", points: { C: 1, G: 1 } }
+                { text: "Reading a book at a cafe.", points: { resultA: 1, resultC: 1 } },
+                { text: "Hiking in the mountains.", points: { resultB: 1, resultF: 1 } },
+                { text: "Attending a coding workshop.", points: { resultE: 1, resultH: 1 } }
             ]
         },
         {
-            question: "Q2: What is your primary tool?",
+            question: "Q2: What is your preferred color palette?",
             choices: [
-                { text: "Sword", points: { C: 1, A: 1 } },
-                { text: "Magic", points: { D: 1, H: 1 } },
-                { text: "Knowledge", points: { B: 1, E: 1 } }
+                { text: "Earthy tones (greens, browns).", points: { resultB: 1, resultD: 1 } },
+                { text: "Pastels (pink, blue, lavender).", points: { resultC: 1, resultG: 1 } },
+                { text: "Neon/Vibrant colors (cyan, magenta).", points: { resultE: 1, resultF: 1 } }
             ]
         },
-        // Add 6 more questions following the same structure. 
-        // Ensure all 8 results (A-H) are reachable across the questions.
-        // Below are placeholders to reach 8 questions.
+        // Add 6 more questions here following the same structure
+        // Example Q3:
         {
-            question: "Q3: How do you face danger?",
+            question: "Q3: Pick a pet.",
             choices: [
-                { text: "Head-on", points: { A: 1, C: 1 } },
-                { text: "Strategically", points: { B: 1, D: 1 } },
-                { text: "Avoid it", points: { G: 1, F: 1 } }
+                { text: "A sleek black cat.", points: { resultA: 1, resultD: 1 } },
+                { text: "A fluffy golden retriever.", points: { resultB: 1, resultG: 1 } },
+                { text: "A robotic dog.", points: { resultE: 1, resultH: 1 } }
             ]
         },
-        {
-            question: "Q4: What's your favorite time of day?",
+        // Q4 placeholder
+         {
+            question: "Q4: Your favorite season?",
             choices: [
-                { text: "Morning", points: { E: 1, G: 1 } },
-                { text: "Afternoon", points: { C: 1, F: 1 } },
-                { text: "Night", points: { B: 1, H: 1 } }
+                { text: "Spring, for the blossoms.", points: { resultC: 1, resultG: 1 } },
+                { text: "Autumn, for the cozy vibes.", points: { resultA: 1, resultD: 1 } },
+                { text: "Winter, for the crisp air.", points: { resultF: 1, resultH: 1 } }
             ]
         },
-        {
-            question: "Q5: Choose an element.",
+        // Q5 placeholder
+         {
+            question: "Q5: Ideal job title?",
             choices: [
-                { text: "Fire", points: { A: 1, D: 1 } },
-                { text: "Water", points: { B: 1, F: 1 } },
-                { text: "Earth", points: { E: 1, G: 1 } }
+                { text: "Librarian.", points: { resultA: 1, resultC: 1 } },
+                { text: "Environmentalist.", points: { resultB: 1, resultF: 1 } },
+                { text: "Data Scientist.", points: { resultE: 1, resultH: 1 } }
             ]
         },
-        {
-            question: "Q6: Which companion would you choose?",
+        // Q6 placeholder
+         {
+            question: "Q6: Favorite type of music?",
             choices: [
-                { text: "A dog", points: { A: 1, H: 1 } },
-                { text: "A cat", points: { B: 1, D: 1 } },
-                { text: "An owl", points: { C: 1, E: 1 } }
+                { text: "Classical/Jazz.", points: { resultA: 1, resultC: 1 } },
+                { text: "Indie/Folk.", points: { resultB: 1, resultD: 1 } },
+                { text: "Synthwave/Electronic.", points: { resultE: 1, resultF: 1, resultH: 1 } }
             ]
         },
-        {
-            question: "Q7: What treasure do you seek?",
+        // Q7 placeholder
+         {
+            question: "Q7: A place you'd like to live?",
             choices: [
-                { text: "Gold", points: { F: 1, C: 1 } },
-                { text: "A powerful artifact", points: { G: 1, H: 1 } },
-                { text: "Hidden knowledge", points: { B: 1, E: 1 } }
+                { text: "A cabin in the woods.", points: { resultB: 1, resultF: 1 } },
+                { text: "A bustling city apartment.", points: { resultD: 1, resultE: 1, resultH: 1 } },
+                { text: "A quaint, historical town.", points: { resultA: 1, resultC: 1, resultG: 1 } }
             ]
         },
-        {
-            question: "Q8: What's your goal?",
+        // Q8 placeholder
+         {
+            question: "Q8: Choose an emoji.",
             choices: [
-                { text: "Become a hero", points: { A: 1, C: 1 } },
-                { text: "Explore the world", points: { B: 1, F: 1 } },
-                { text: "Live peacefully", points: { E: 1, G: 1 } }
+                { text: "Sparkles", points: { resultC: 1, resultG: 1 } },
+                { text: "Evergreen tree", points: { resultB: 1, resultF: 1 } },
+                { text: "Robot face", points: { resultE: 1, resultH: 1 } }
             ]
-        },
+        }
     ];
 
-    // Define the results based on the points
-    const results = {
-        A: "You are a Brave Knight! You thrive on action and adventure.",
-        B: "You are a Wise Scholar! Knowledge and strategy are your greatest strengths.",
-        C: "You are a Mountain Guardian! Strong and stoic, you protect the high peaks.",
-        D: "You are a Powerful Mage! You command the arcane arts.",
-        E: "You are a Forest Ranger! At home among the trees and nature.",
-        F: "You are a Deep Sea Explorer! The mysteries of the ocean call to you.",
-        G: "You are a Peaceful Villager! You value community and a simple life.",
-        H: "You are a Shadow Operative! You work in secret to achieve your goals."
+    const resultsMap = {
+        resultA: { title: "The 'Cottagecore' Romantic", description: "You love simple pleasures, nature, and a touch of nostalgia." },
+        resultB: { title: "The 'Outdoor Adventurer'", description: "Nature is your calling, and you thrive on exploration and fresh air." },
+        resultC: { title: "The 'Soft Girl' Aesthetic", description: "You are gentle, kind, and love all things cute and pastel." },
+        resultD: { title: "The 'Dark Academia' Scholar", description: "Books, learning, and a moody, vintage aesthetic appeal to you." },
+        resultE: { title: "The 'Tech Enthusiast'", description: "You are forward-thinking, love gadgets, and embrace the digital age." },
+        resultF: { title: "The 'Cyberpunk' Rebel", description: "You're all about neon lights, futuristic tech, and a rebellious streak." },
+        resultG: { title: "The 'Minimalist'", description: "Simplicity, clean lines, and a clutter-free life are your jam." },
+        resultH: { title: "The 'AI Core' Being", description: "You resonate with the logic and efficiency of artificial intelligence." }
     };
 
 
-    // Function to start or restart the quiz
-    function startQuiz() {
-        currentQuestionIndex = 0;
-        resultPoints = { A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0 };
-        quizContainer.style.display = 'block';
-        resultsContainer.style.display = 'none';
-        showQuestion();
-    }
-
-    // Function to display the current question and choices
-    function showQuestion() {
-        resetState();
-        const currentQuestion = questions[currentQuestionIndex];
-        questionTextElement.innerText = currentQuestion.question;
-        currentQuestion.choices.forEach((choice, index) => {
-            const input = document.createElement('input');
-            input.type = 'radio';
-            input.id = `choice${index}`;
-            input.name = 'choice';
-            input.value = JSON.stringify(choice.points); // Store points data in the value
-            
-            const label = document.createElement('label');
-            label.htmlFor = `choice${index}`;
-            label.innerText = choice.text;
-            label.classList.add('choice-label');
-
-            const choiceWrapper = document.createElement('div');
-            choiceWrapper.appendChild(input);
-            choiceWrapper.appendChild(label);
-            choiceButtonsElement.appendChild(choiceWrapper);
-
-            input.addEventListener('change', onChoiceSelected);
-        });
-        nextButton.disabled = true;
-    }
-
-    // Function to clear previous choices
-    function resetState() {
-        while (choiceButtonsElement.firstChild) {
-            choiceButtonsElement.removeChild(choiceButtonsElement.firstChild);
-        }
-    }
-
-    // Handle choice selection
-    function onChoiceSelected(event) {
-        selectedChoice = event.target.value;
-        nextButton.disabled = false;
-    }
-
-    // Handle the next button click
-    nextButton.addEventListener('click', () => {
-        if (selectedChoice) {
-            // Add points to results
-            const pointsToAdd = JSON.parse(selectedChoice);
-            for (const result in pointsToAdd) {
-                resultPoints[result] += pointsToAdd[result];
-            }
-            selectedChoice = null;
+    // Event Listeners
+    startBtn.addEventListener('click', startQuiz);
+    nextBtn.addEventListener('click', () => {
+        if (currentQuestionIndex < questions.length) {
+            recordAnswer();
             currentQuestionIndex++;
             if (currentQuestionIndex < questions.length) {
-                showQuestion();
+                displayQuestion();
             } else {
-                showResults();
+                displayResult();
             }
         }
     });
+    restartBtn.addEventListener('click', restartQuiz);
 
-    // Function to display the results
-    function showResults() {
+    // Functions
+    function startQuiz() {
+        titlePage.style.display = 'none';
+        quizContainer.style.display = 'block';
+        currentQuestionIndex = 0;
+        // Reset scores
+        Object.keys(scores).forEach(key => scores[key] = 0);
+        displayQuestion();
+    }
+
+    function displayQuestion() {
+        nextBtn.style.display = 'none'; // Hide next button until an option is selected
+        const currentQuestion = questions[currentQuestionIndex];
+        questionText.textContent = currentQuestion.question;
+        choicesContainer.innerHTML = ''; // Clear previous choices
+
+        currentQuestion.choices.forEach((choice, index) => {
+            const choiceLabel = document.createElement('label');
+            const choiceInput = document.createElement('input');
+            choiceInput.type = 'radio';
+            choiceInput.name = 'choice';
+            choiceInput.value = index;
+            // Add an event listener to show the next button when a choice is made
+            choiceInput.addEventListener('change', () => {
+                nextBtn.style.display = 'block';
+            });
+
+            choiceLabel.appendChild(choiceInput);
+            choiceLabel.appendChild(document.createTextNode(choice.text));
+            choicesContainer.appendChild(choiceLabel);
+        });
+    }
+
+    function recordAnswer() {
+        const selectedOption = document.querySelector('input[name="choice"]:checked');
+        if (selectedOption) {
+            const selectedIndex = parseInt(selectedOption.value);
+            const selectedPoints = questions[currentQuestionIndex].choices[selectedIndex].points;
+            
+            // Add points to the respective results
+            for (const result in selectedPoints) {
+                if (scores.hasOwnProperty(result)) {
+                    scores[result] += selectedPoints[result];
+                }
+            }
+        }
+    }
+
+    function displayResult() {
         quizContainer.style.display = 'none';
         resultsContainer.style.display = 'block';
 
-        // Find the result with the maximum points
-        let maxPoints = 0;
-        let finalResultKey = '';
-        for (const result in resultPoints) {
-            if (resultPoints[result] > maxPoints) {
-                maxPoints = resultPoints[result];
-                finalResultKey = result;
+        // Determine the result with the highest score
+        let highestScore = 0;
+        let finalResult = '';
+        for (const result in scores) {
+            if (scores[result] > highestScore) {
+                highestScore = scores[result];
+                finalResult = result;
             }
         }
+        
+        // Handle potential ties or no answers (fallback to a default or one of the options)
+        if (!finalResult) {
+            finalResult = 'resultA'; // Default fallback
+        }
 
-        resultsTitle.innerText = "Your Result:";
-        resultsText.innerText = results[finalResultKey] || "An unexpected outcome occurred. Try again!";
+        const resultInfo = resultsMap[finalResult];
+        resultTitle.textContent = resultInfo.title;
+        resultDescription.textContent = resultInfo.description;
     }
 
-    // Restart the quiz
-    restartButton.addEventListener('click', startQuiz);
-
-    // Initial call to start the quiz
-    startQuiz();
+    function restartQuiz() {
+        resultsContainer.style.display = 'none';
+        titlePage.style.display = 'block';
+        currentQuestionIndex = 0;
+        scores = {resultA: 0, resultB: 0, resultC: 0, resultD: 0, resultE: 0, resultF: 0, resultG: 0, resultH: 0};
+    }
 });
+
