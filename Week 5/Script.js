@@ -164,18 +164,23 @@ document.addEventListener('DOMContentLoaded', () => {
         resultsContainer.style.display = 'block';
 
         // Determine the result with the highest score
-        let highestScore = 0;
+        let highestScore = -1;
         let finalResult = '';
         for (const result in scores) {
             if (scores[result] > highestScore) {
                 highestScore = scores[result];
                 finalResult = result;
-            }
-        }
+            } 
         
-        // Handle potential ties or no answers (fallback to a default or one of the options)
-        if (!finalResult) {
-            finalResult = 'resultA'; // Default fallback
+        // Handle potential ties or no answers (First result alphabetically will be chosen)
+        else if (scores[result] === highestScore) {
+                // If it's a tie, compare the result strings alphabetically.
+                // JavaScript string comparison automatically handles alphabetical order.
+                // If the current 'result' comes before the current 'finalResult' alphabetically, update the winner.
+                if (finalResult === '' || result < finalResult) {
+                    finalResult = result;
+                }
+            }
         }
 
         const resultInfo = resultsMap[finalResult];
