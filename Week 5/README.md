@@ -122,9 +122,9 @@ PROJECT READ ME DETAILS BELOW!!
           - A more polished look overall.
 
           ## 9. Credits
-          - Images (would've been) from pinterest, doll maker websites, and google
+          - Background images from stock adobe, shutterstock(from Google images so there's no watermark behind the questions), iStock, freepik, pinterest, HouseBeautiful, google images, MyFreeTextures
           - AI assistance as noted in Section 7
-        (Images for characters would be from Picrew, Doll Divine, or some other dress up game).
+        (Character images would be from Picrew, Doll Divine, or some other dress up game).
         (Moodboards for aesthetics will be done by me).
         (Basic background images will be found by Google, No AI).
         (And of course, links to wikis of the aesthetic will be included).
