@@ -19,74 +19,67 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const questions = [
         {
-            question: "Q1: What's your ideal weekend activity?",
+            question: "Q1: Pick a word.",
             choices: [
-                { text: "Reading a book at a cafe.", points: { resultA: 1, resultC: 1 } },
-                { text: "Hiking in the mountains.", points: { resultB: 1, resultF: 1 } },
-                { text: "Attending a coding workshop.", points: { resultE: 1, resultH: 1 } }
+                { text: "Dream", points: { resultA: 1, resultC: 1 } },
+                { text: "Lucid", points: { resultB: 1, resultF: 1 } },
+                { text: "Hazy", points: { resultE: 1, resultH: 1 } }
             ]
         },
         {
-            question: "Q2: What is your preferred color palette?",
+            question: "Q2: Pick another word.",
             choices: [
-                { text: "Earthy tones (greens, browns).", points: { resultB: 1, resultD: 1 } },
-                { text: "Pastels (pink, blue, lavender).", points: { resultC: 1, resultG: 1 } },
-                { text: "Neon/Vibrant colors (cyan, magenta).", points: { resultE: 1, resultF: 1 } }
+                { text: "Foggy", points: { resultB: 1, resultD: 1 } },
+                { text: "Dark", points: { resultC: 1, resultG: 1 } },
+                { text: "Forest", points: { resultE: 1, resultF: 1 } }
             ]
-        },
-        // Add 6 more questions here following the same structure
-        // Example Q3:
+        }, 
         {
-            question: "Q3: Pick a pet.",
+            question: "Q3: Pick a cool color",
             choices: [
-                { text: "A sleek black cat.", points: { resultA: 1, resultD: 1 } },
-                { text: "A fluffy golden retriever.", points: { resultB: 1, resultG: 1 } },
-                { text: "A robotic dog.", points: { resultE: 1, resultH: 1 } }
+                { text: "Purple", points: { resultA: 1, resultD: 1 } },
+                { text: "Blue", points: { resultB: 1, resultG: 1 } },
+                { text: "Green", points: { resultE: 1, resultH: 1 } }
             ]
-        },
-        // Q4 placeholder
+        }, 
          {
-            question: "Q4: Your favorite season?",
+            question: "Q4: Now, pick a warm color!",
             choices: [
-                { text: "Spring, for the blossoms.", points: { resultC: 1, resultG: 1 } },
-                { text: "Autumn, for the cozy vibes.", points: { resultA: 1, resultD: 1 } },
-                { text: "Winter, for the crisp air.", points: { resultF: 1, resultH: 1 } }
+                { text: "Yellow", points: { resultC: 1, resultG: 1 } },
+                { text: "Orange", points: { resultA: 1, resultD: 1 } },
+                { text: "Red", points: { resultF: 1, resultH: 1 } }
             ]
-        },
-        // Q5 placeholder
+        }, 
          {
-            question: "Q5: Ideal job title?",
+            question: "Q5: Pick a character name (or names if there are two).",
             choices: [
-                { text: "Librarian.", points: { resultA: 1, resultC: 1 } },
-                { text: "Environmentalist.", points: { resultB: 1, resultF: 1 } },
-                { text: "Data Scientist.", points: { resultE: 1, resultH: 1 } }
+                { text: "Leah and Lysander", points: { resultA: 1, resultC: 1 } },
+                { text: "Aurora", points: { resultB: 1, resultF: 1 } },
+                { text: "Daisy and Eli Bell", points: { resultE: 1, resultH: 1 } }
             ]
-        },
-        // Q6 placeholder
+        }, 
          {
-            question: "Q6: Favorite type of music?",
+            question: "Q6: Pick another name (or names if there are two).",
             choices: [
-                { text: "Classical/Jazz.", points: { resultA: 1, resultC: 1 } },
-                { text: "Indie/Folk.", points: { resultB: 1, resultD: 1 } },
-                { text: "Synthwave/Electronic.", points: { resultE: 1, resultF: 1, resultH: 1 } }
+                { text: "Oberon", points: { resultA: 1, resultC: 1 } },
+                { text: "Sage and Rowan", points: { resultB: 1, resultD: 1 } },
+                { text: "Willow", points: { resultE: 1, resultF: 1, resultH: 1 } }
             ]
-        },
-        // Q7 placeholder
+        }, 
          {
-            question: "Q7: A place you'd like to live?",
+            question: "Q7: Now, pick an item!",
             choices: [
-                { text: "A cabin in the woods.", points: { resultB: 1, resultF: 1 } },
-                { text: "A bustling city apartment.", points: { resultD: 1, resultE: 1, resultH: 1 } },
-                { text: "A quaint, historical town.", points: { resultA: 1, resultC: 1, resultG: 1 } }
+                { text: "Microphone", points: { resultB: 1, resultF: 1 } },
+                { text: "Curtain", points: { resultD: 1, resultE: 1, resultH: 1 } },
+                { text: "Motorcycle", points: { resultA: 1, resultC: 1, resultG: 1 } }
             ]
-        },
-        // Q8 placeholder
+        }, 
          {
-            question: "Q8: Choose an emoji.",
+            question: "Q8: Pick another item!",
             choices: [
-                { text: "Sparkles", points: { resultC: 1, resultG: 1 } },
-                { text: "Evergreen tree", points: { resultB: 1, resultF: 1 } },
-                { text: "Robot face", points: { resultE: 1, resultH: 1 } }
+                { text: "Guitar", points: { resultC: 1, resultG: 1 } },
+                { text: "Anchor", points: { resultB: 1, resultF: 1 } },
+                { text: "Swing-Set", points: { resultE: 1, resultH: 1 } }
             ]
         }
     ];

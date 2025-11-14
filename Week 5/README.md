@@ -110,17 +110,19 @@ PROJECT READ ME DETAILS BELOW!!
 
           ## 7. AI Tools Used
           List any AI tools and how you used them: 
-          - GoogleAI from here on out: I used GoogleAI to help with the structure of all my code throughout all my files, as well as help me figure out WHAT code I needed to use for the files. So bascially, I had it create templates for me to use and work backwards on in order to understand more about what I'm coding exactly. I filled in the blanks and changed a few things but I (or I tried to) comment on different lines of code to show my understanding.
+          - GoogleAI from here on out: I used GoogleAI to help with the structure of all my code throughout all my files, as well as help me figure out WHAT code I needed to use for the files. So bascially, I had it create templates for me to use and work backwards on in order to understand more about what I'm coding exactly. I filled in the blanks and changed a few things but I (or I tried to) comment on different lines of code to show my understanding. Didn't mess with the styel much that was given to me as I wanted to focus on the functionality first and foremost.
            
           ## 8. Future Improvements
           What would you add with more time? 
           - Character pictures.
           - Result images.
           - More descriptions of questions, choices and results.
+          - A progress bar for the quiz. 
+          - A list of other results and how many points the user had in each result.
           - A more polished look overall.
 
           ## 9. Credits
-          - Images from pinterest and google
+          - Images (would've been) from pinterest, doll maker websites, and google
           - AI assistance as noted in Section 7
         (Images for characters would be from Picrew, Doll Divine, or some other dress up game).
         (Moodboards for aesthetics will be done by me).
