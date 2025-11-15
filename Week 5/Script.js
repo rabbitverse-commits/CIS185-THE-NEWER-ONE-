@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const questions = [
         {
             question: "Q1: Pick a word.",
-            backgroundImage: `dreamyplace.jpg`,
+            backgroundImage: `images/dreamyplace.jpg`,
             choices: [
                 { text: "Dream", points: { resultD: 1, resultH: 1, resultE: 1 } },
                 { text: "Lucid", points: { resultF: 1, resultC: 1, resultG: 1 } },
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             question: "Q2: Pick another word.",
-            backgroundImage: `spookyforest.jpg`,
+            backgroundImage: `images/spookyforest.jpg`,
             choices: [
                 { text: "Foggy", points: { resultE: 1, resultG: 1, resultB: 1 } },
                 { text: "Dark", points: { resultA: 1, resultC: 1, resultE: 1 } },
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 
         {
             question: "Q3: Pick a cool color",
-            backgroundImage: `coolcolors.jpg`,
+            backgroundImage: `images/coolcolors.jpg`,
             choices: [
                 { text: "Purple", points: { resultD: 1, resultH: 1, resultB: 1 } },
                 { text: "Blue", points: { resultB: 1, resultC: 1, resultH: 1 } },
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 
          {
             question: "Q4: Now, pick a warm color!",
-            backgroundImage: `warmcolors.jpg`,
+            backgroundImage: `images/warmcolors.jpg`,
             choices: [
                 { text: "Yellow", points: { resultD: 1, resultG: 1, resultA: 1 } },
                 { text: "Orange", points: { resultC: 1, resultF: 1, resultH: 1 } },
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 
          {
             question: "Q5: Pick a character name (or names if there are two).",
-            backgroundImage: `oldpaper.jpg`,
+            backgroundImage: `images/oldpaper.jpg`,
             choices: [
                 { text: "Leah and Lysander", points: { resultA: 1, resultB: 1, resultD:1 } },
                 { text: "Aurora", points: { resultA: 1, resultC: 1, resultD: 1 } },
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 
          {
             question: "Q6: Pick another name (or names if there are two).",
-            backgroundImage: `vintagepaper.jpg`,
+            backgroundImage: `images/vintagepaper.jpg`,
             choices: [
                 { text: "Oberon", points: { resultE: 1, resultH: 1, resultG: 1 } },
                 { text: "Sage and Rowan", points: { resultF: 1, resultG: 1, resultB: 1 } },
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 
          {
             question: "Q7: Now, pick an item!",
-            backgroundImage: `darkroom.jpg`,
+            backgroundImage: `images/darkroom.jpg`,
             choices: [
                 { text: "Microphone", points: { resultC: 1, resultE: 1, resultH: 1 } },
                 { text: "Curtain", points: { resultB: 1, resultF: 1, resultG: 1 } },
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 
          {
             question: "Q8: Pick another item!",
-            backgroundImage: `lightroom.jpg`,
+            backgroundImage: `images/lightroom.jpg`,
             choices: [
                 { text: "Guitar", points: { resultC: 1, resultF: 1, resultH: 1 } },
                 { text: "Anchor", points: { resultB: 1, resultG: 1, resultH: 1 } },
