@@ -110,7 +110,9 @@ PROJECT READ ME DETAILS BELOW!!
 
           ## 7. AI Tools Used
           List any AI tools and how you used them: 
-          - GoogleAI from here on out: I used GoogleAI to help with the structure of all my code throughout all my files, as well as help me figure out WHAT code I needed to use for the files. So bascially, I had it create templates for me to use and work backwards on in order to understand more about what I'm coding exactly. I filled in the blanks and changed a few things but I (or I tried to) comment on different lines of code to show my understanding.
+          - GoogleAI from here on out: I used GoogleAI to help with the structure of all my code throughout all my files, as well as help me figure out WHAT code I needed to use for the files. So bascially, I had it create templates for me to use and work backwards on in order to understand more about what I'm coding exactly. I filled in the blanks and changed a few things but I (or I tried to) comment on different lines of code to show my understanding. What ended up happening though is that I kept the comments the AI made and called it good after I got it working. If our final invovles making something more complicated or revising a project we already did...
+
+          Then I know what I want to do for my final. 
            
           ## 8. Future Improvements
           What would you add with more time? 
