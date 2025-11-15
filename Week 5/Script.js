@@ -257,9 +257,7 @@ Unicorns (but not the modern version of unicorns, the traditional version of uni
 Here is the link to the modern unicorn aesthetic if you wish to see what it is like: https://aesthetics.fandom.com/wiki/Unicorn_Trend
 ` 
 }
-    };
-
-
+    }; 
     // Event Listeners
     startBtn.addEventListener('click', startQuiz);
     nextBtn.addEventListener('click', () => {
@@ -285,14 +283,16 @@ Here is the link to the modern unicorn aesthetic if you wish to see what it is l
         displayQuestion();
     }
 
-    function displayQuestion() {
-        nextBtn.style.display = 'none'; // Hide next button until an option is selected
+    function displayQuestion() { 
         const currentQuestion = questions[currentQuestionIndex];
+        document.body.style.backgroundImage = `url('${question.backgroundImage}')`;
         questionText.textContent = currentQuestion.question;
         choicesContainer.innerHTML = ''; // Clear previous choices
-
+        nextBtn.style.display = 'none'; // Hide next button until an option is selected
+        
         currentQuestion.choices.forEach((choice, index) => {
             const choiceLabel = document.createElement('label');
+            choiceLabel.classLlist.add('choice-item')
             const choiceInput = document.createElement('input');
             choiceInput.type = 'radio';
             choiceInput.name = 'choice';

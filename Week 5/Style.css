@@ -6,6 +6,23 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
+
+    /* Base background properties */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Smooth transition when the image changes */
+    transition: background-image 0.5s ease-in-out; 
+}
+
+/* Optional: Add a subtle overlay to ensure text remains readable on any background */
+.container {
+    background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent white background for the text box */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
 }
 
 .container {
