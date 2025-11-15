@@ -21,49 +21,49 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             question: "Q1: Pick a word.",
             choices: [
-                { text: "Dream", points: { resultD: 1, resultH: 1 } },
-                { text: "Lucid", points: { resultB: 1, resultC: 1 } },
-                { text: "Hazy", points: { resultA: 1, resultB: 1 } }
+                { text: "Dream", points: { resultD: 1, resultH: 1, resultE: 1 } },
+                { text: "Lucid", points: { resultF: 1, resultC: 1, resultG: 1 } },
+                { text: "Hazy", points: { resultA: 1, resultB: 1, resultG: 1 } }
             ]
         },
         {
             question: "Q2: Pick another word.",
             choices: [
-                { text: "Foggy", points: { resultE: 1, resultG: 1 } },
-                { text: "Dark", points: { resultA: 1, resultC: 1 } },
-                { text: "Forest", points: { resultE: 1, resultF: 1 } }
+                { text: "Foggy", points: { resultE: 1, resultG: 1, resultB: 1 } },
+                { text: "Dark", points: { resultA: 1, resultC: 1, resultE: 1 } },
+                { text: "Forest", points: { resultE: 1, resultF: 1, resultH: 1 } }
             ]
         }, 
         {
             question: "Q3: Pick a cool color",
             choices: [
-                { text: "Purple", points: { resultD: 1, resultH: 1 } },
-                { text: "Blue", points: { resultB: 1, resultC: 1 } },
-                { text: "Green", points: { resultE: 1, resultF: 1 } }
+                { text: "Purple", points: { resultD: 1, resultH: 1, resultB: 1 } },
+                { text: "Blue", points: { resultB: 1, resultC: 1, resultH: 1 } },
+                { text: "Green", points: { resultE: 1, resultF: 1, resultB: 1 } }
             ]
         }, 
          {
             question: "Q4: Now, pick a warm color!",
             choices: [
-                { text: "Yellow", points: { resultD: 1, resultG: 1 } },
-                { text: "Orange", points: { resultC: 1, resultF: 1 } },
-                { text: "Red", points: { resultA: 1, resultD: 1 } }
+                { text: "Yellow", points: { resultD: 1, resultG: 1, resultA: 1 } },
+                { text: "Orange", points: { resultC: 1, resultF: 1, resultH: 1 } },
+                { text: "Red", points: { resultA: 1, resultD: 1, resultG: 1 } }
             ]
         }, 
          {
             question: "Q5: Pick a character name (or names if there are two).",
             choices: [
-                { text: "Leah and Lysander", points: { resultA: 1, resultB: 1 } },
-                { text: "Aurora", points: { resultA: 1, resultC: 1 } },
-                { text: "Daisy and Eli Bell", points: { resultD: 1, resultH: 1 } }
+                { text: "Leah and Lysander", points: { resultA: 1, resultB: 1, resultD:1 } },
+                { text: "Aurora", points: { resultA: 1, resultC: 1, resultD: 1 } },
+                { text: "Daisy and Eli Bell", points: { resultD: 1, resultH: 1, resultA: 1 } }
             ]
         }, 
          {
             question: "Q6: Pick another name (or names if there are two).",
             choices: [
-                { text: "Oberon", points: { resultE: 1, resultH: 1 } },
-                { text: "Sage and Rowan", points: { resultF: 1, resultG: 1 } },
-                { text: "Willow", points: { resultH: 1, resultD: 1 } }
+                { text: "Oberon", points: { resultE: 1, resultH: 1, resultG: 1 } },
+                { text: "Sage and Rowan", points: { resultF: 1, resultG: 1, resultB: 1 } },
+                { text: "Willow", points: { resultD: 1, resultH: 1, resultE: 1 } }
             ]
         }, 
          {
@@ -85,7 +85,28 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     const resultsMap = {
-        resultA: { title: "Result 1: Motomari", description: "You love simple pleasures, nature, and a touch of nostalgia." },
+        resultA: { title: "Result 1: Motomari", description: `Wiki Link: https://aesthetics.fandom.com/wiki/Motomami
+
+Which shares with the character Leah!
+
+The main character in the story of RGAI: A Totally normal Life!
+
+She is the twin sister of Lysander, and the girlfriend to Aurora. Both her and Aurora share a house together and take care of the siblings Daisy and Eli Bell.
+
+Gender: Female
+
+Age: 34
+
+"Fairytale symbolism": Red Riding Hood
+
+Other aesthetics for Leah include:
+
+Vampire: https://aesthetics.fandom.com/wiki/Vampire#Gallery
+
+Lo-Fi: https://aesthetics.fandom.com/wiki/Lo-fi_Art#Gallery
+
+Neo-Tokyo: https://aesthetics.fandom.com/wiki/Neo-Tokyo#Gallery`
+},
         resultB: { title: "Result 2: Vaporwave", description: "Nature is your calling, and you thrive on exploration and fresh air." },
         resultC: { title: "Result 3: Afrofuturism", description: "You are gentle, kind, and love all things cute and pastel." },
         resultD: { title: "Result 4: Dreamcore and Kidcore", description: "Books, learning, and a moody, vintage aesthetic appeal to you." },

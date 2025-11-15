@@ -68,3 +68,7 @@ input[type="radio"] {
 #results-container h1 {
     color: #28a745;
 }
+#result-text {
+    white-space: pre-wrap; 
+    line-height: 1.5;
+}
