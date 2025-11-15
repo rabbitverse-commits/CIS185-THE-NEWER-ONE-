@@ -285,14 +285,14 @@ Here is the link to the modern unicorn aesthetic if you wish to see what it is l
 
     function displayQuestion() { 
         const currentQuestion = questions[currentQuestionIndex];
-        document.body.style.backgroundImage = `url('${question.backgroundImage}')`;
+        document.body.style.backgroundImage = `url('${currentQuestion.backgroundImage}')`;
         questionText.textContent = currentQuestion.question;
         choicesContainer.innerHTML = ''; // Clear previous choices
         nextBtn.style.display = 'none'; // Hide next button until an option is selected
         
         currentQuestion.choices.forEach((choice, index) => {
             const choiceLabel = document.createElement('label');
-            choiceLabel.classLlist.add('choice-item')
+            choiceLabel.classList.add('choice-item')
             const choiceInput = document.createElement('input');
             choiceInput.type = 'radio';
             choiceInput.name = 'choice';
