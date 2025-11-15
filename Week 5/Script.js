@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const questions = [
         {
             question: "Q1: Pick a word.",
+            backgroundImage: `dreamyplace.jpg`,
             choices: [
                 { text: "Dream", points: { resultD: 1, resultH: 1, resultE: 1 } },
                 { text: "Lucid", points: { resultF: 1, resultC: 1, resultG: 1 } },
@@ -28,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             question: "Q2: Pick another word.",
+            backgroundImage: `spookyforest.jpg`,
             choices: [
                 { text: "Foggy", points: { resultE: 1, resultG: 1, resultB: 1 } },
                 { text: "Dark", points: { resultA: 1, resultC: 1, resultE: 1 } },
@@ -36,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 
         {
             question: "Q3: Pick a cool color",
+            backgroundImage: `coolcolors.jpg`,
             choices: [
                 { text: "Purple", points: { resultD: 1, resultH: 1, resultB: 1 } },
                 { text: "Blue", points: { resultB: 1, resultC: 1, resultH: 1 } },
@@ -44,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 
          {
             question: "Q4: Now, pick a warm color!",
+            backgroundImage: `warmcolors.jpg`,
             choices: [
                 { text: "Yellow", points: { resultD: 1, resultG: 1, resultA: 1 } },
                 { text: "Orange", points: { resultC: 1, resultF: 1, resultH: 1 } },
@@ -52,6 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 
          {
             question: "Q5: Pick a character name (or names if there are two).",
+            backgroundImage: `oldpaper.jpg`,
             choices: [
                 { text: "Leah and Lysander", points: { resultA: 1, resultB: 1, resultD:1 } },
                 { text: "Aurora", points: { resultA: 1, resultC: 1, resultD: 1 } },
@@ -60,6 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 
          {
             question: "Q6: Pick another name (or names if there are two).",
+            backgroundImage: `vintagepaper.jpg`,
             choices: [
                 { text: "Oberon", points: { resultE: 1, resultH: 1, resultG: 1 } },
                 { text: "Sage and Rowan", points: { resultF: 1, resultG: 1, resultB: 1 } },
@@ -68,6 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 
          {
             question: "Q7: Now, pick an item!",
+            backgroundImage: `darkroom.jpg`,
             choices: [
                 { text: "Microphone", points: { resultC: 1, resultE: 1, resultH: 1 } },
                 { text: "Curtain", points: { resultB: 1, resultF: 1, resultG: 1 } },
@@ -76,6 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 
          {
             question: "Q8: Pick another item!",
+            backgroundImage: `lightroom.jpg`,
             choices: [
                 { text: "Guitar", points: { resultC: 1, resultF: 1, resultH: 1 } },
                 { text: "Anchor", points: { resultB: 1, resultG: 1, resultH: 1 } },
@@ -89,8 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 Which shares with the character Leah!
 
-The main character in the story of RGAI: A Totally normal Life!
-
+The main character in my story called RGAI: A Totally Normal Life!
 She is the twin sister of Lysander, and the girlfriend to Aurora. Both her and Aurora share a house together and take care of the siblings Daisy and Eli Bell.
 
 Gender: Female
@@ -99,21 +106,157 @@ Age: 34
 
 "Fairytale symbolism": Red Riding Hood
 
-Other aesthetics for Leah include:
-
+Other aesthetics for Leah include: 
 Vampire: https://aesthetics.fandom.com/wiki/Vampire#Gallery
 
 Lo-Fi: https://aesthetics.fandom.com/wiki/Lo-fi_Art#Gallery
 
 Neo-Tokyo: https://aesthetics.fandom.com/wiki/Neo-Tokyo#Gallery`
 },
-        resultB: { title: "Result 2: Vaporwave", description: "Nature is your calling, and you thrive on exploration and fresh air." },
-        resultC: { title: "Result 3: Afrofuturism", description: "You are gentle, kind, and love all things cute and pastel." },
-        resultD: { title: "Result 4: Dreamcore and Kidcore", description: "Books, learning, and a moody, vintage aesthetic appeal to you." },
-        resultE: { title: "Result 5: Fairygrunge", description: "You are forward-thinking, love gadgets, and embrace the digital age." },
-        resultF: { title: "Result 6: Goblincore", description: "You're all about neon lights, futuristic tech, and a rebellious streak." },
-        resultG: { title: "Result 7: Piratecore", description: "Simplicity, clean lines, and a clutter-free life are your jam." },
-        resultH: { title: "Result 8: Auroracore", description: "You resonate with the logic and efficiency of artificial intelligence." }
+        resultB: { title: "Result 2: Vaporwave", description: `Wiki Link: https://aesthetics.fandom.com/wiki/Vaporwave
+
+Which shares with the character Lysander!
+
+A character in my story called RGAI: A Totally Normal Life!
+He's the twin brother of Leah.
+
+Gender: Male
+
+Age: 34
+
+"Fairytale symbolism": The Catepillar from Alice in Wonderland
+
+Other aesthetics for Lysander include:
+Mermaidcore: https://aesthetics.fandom.com/wiki/Mermaidcore
+
+Neo-Chinese Style: https://aesthetics.fandom.com/wiki/Neo-Chinese_Style#Gallery
+
+Guochao: https://aesthetics.fandom.com/wiki/Guochao#Gallery
+
+Synthwave: https://aesthetics.fandom.com/wiki/Synthwave#References` 
+},
+        resultC: { title: "Result 3: Afrofuturism", description: `Wiki Link: https://aesthetics.fandom.com/wiki/Afrofuturism#Gallery
+
+Which shares with the character Aurora!
+
+A character in my story called RGAI: A Totally Normal Life!
+She's the girlfriend to Leah. Both her and Leah share a house together and take care of the siblings Daisy and Eli Bell.
+
+Gender: Female
+
+Age: 35
+
+"Fairytale symbolism": Cerebus
+
+Other aesthetics for Aurora include:
+Afropunk: https://aesthetics.fandom.com/wiki/Afropunk#Gallery
+
+Fantasy Astronomy: https://aesthetics.fandom.com/wiki/Fantasy_Astronomy#Gallery`
+},
+        resultD: { title: "Result 4: Dreamcore and Kidcore", description: `Wiki Links:
+(Daisy) Dreamcore: https://aesthetics.fandom.com/wiki/Dreamcore
+
+(Eli) Kidcore: https://aesthetics.fandom.com/wiki/Kidcore
+
+Which shares with the characters Daisy and Eli Bell!
+
+A character in my story called RGAI: A Totally Normal Life!
+They are siblings from another town, but they don't know where their parents are. Leah and Aurora take care of them in their home while they figure out where their parents are.
+
+Daisy is the older sister, Eli is the younger brother
+
+Gender: Female(Older Sister) and Male(Younger Brother)
+
+Ages: 6(Eli) and 12(Daisy)
+
+"Fairytale symbolism": Hansel and Gretal
+
+Other aesthetics for the Bell siblings include:
+(Daisy) Whimsicraft: https://aesthetics.fandom.com/wiki/Whimsicraft#Gallery
+
+(Eli) Weirdcore: https://aesthetics.fandom.com/wiki/Weirdcore#Gallery` 
+},
+        resultE: { title: "Result 5: Fairygrunge", description: `Wiki Link: https://aesthetics.fandom.com/wiki/Fairy_Grunge
+
+Which shares with the character Oberon!
+
+A character in my story called RGAI: A Totally Normal Life!
+He's the lead singer of a band that Daisy Bell likes. I haven't figured out the name yet.
+
+Gender: Male
+
+Age: 36
+
+"Fairytale symbolism": Orpheus
+
+Other aesthetics for Oberon include:
+Forestpunk: https://aesthetics.fandom.com/wiki/Forestpunk#Gallery
+
+Gloomcore: https://aesthetics.fandom.com/wiki/Gloomcore#Gallery` 
+},
+        resultF: { title: "Result 6: Goblincore", description: `Wiki Link: https://aesthetics.fandom.com/wiki/Goblincore
+
+Which shares with the character Sage!
+
+A character in my story called RGAI: A Totally Normal Life!
+He's the bass player of the same band Oberon sings in that Daisy Bell likes. People think Rowan is their sibling, but neither Sage nor Rowan have confirmed it or denied it.
+
+Gender: Male presenting
+
+Age: 35
+
+"Fairytale symbolism": Pan
+
+Other aesthetics for Sage include:
+Cottagegoth: https://aesthetics.fandom.com/wiki/Cottagegoth
+
+Naturecore: https://aesthetics.fandom.com/wiki/Naturecore
+
+Bloomcore: https://aesthetics.fandom.com/wiki/Bloomcore` 
+},
+        resultG: { title: "Result 7: Piratecore", description: `Wiki Link: https://aesthetics.fandom.com/wiki/Pirate
+
+Which shares with the character Rowan!
+
+A character in my story called RGAI: A Totally Normal Life!
+He's the drummer of the same band group as Oberon and Sage that Daisy Bell likes. People think Sage is his sibling, but neither Sage nor Rowan have confirmed or denied it.
+
+Gender: Male
+
+Age: 36
+
+"Fairytale symbolism": Captain John Silver
+
+Other aesthetics for Rowan include:
+Dark Nautical: https://aesthetics.fandom.com/wiki/Dark_Nautical#Gallery
+
+Dark Fantasy: https://aesthetics.fandom.com/wiki/Dark_Fantasy#Gallery` 
+},
+        resultH: { title: "Result 8: Auroracore", description: `Wiki Link: https://aesthetics.fandom.com/wiki/Auroracore#Resources
+
+(In case the page it deleted: https://aestheticsolan.com/auroracore-gallery/)
+
+Which shares with the character Willow!
+
+A character in my story called RGAI: A Totally Normal Life!
+He's the lead guitarist in the same band Oberon, Sage, and Rowan are in that Daisy Bell likes.
+
+Gender: Male
+
+Age: 38
+
+"Fairytale symbolism": Amalthea
+
+Other aesthetics for Willow include:
+Angelcore: https://aesthetics.fandom.com/wiki/Angelcore#Gallery
+
+Holosexual (not a sexuality. Just for people who like holographic items): https://aesthetics.fandom.com/wiki/Holosexual#Gallery
+
+Unicorns (but not the modern version of unicorns, the traditional version of unicorns).
+
+Here is the link to the modern unicorn aesthetic if you wish to see what it is like: https://aesthetics.fandom.com/wiki/Unicorn_Trend
+` 
+}
     };
 
 

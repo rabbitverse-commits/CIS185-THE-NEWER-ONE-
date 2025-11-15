@@ -76,7 +76,7 @@ PROJECT READ ME DETAILS BELOW!!
 
           ## 1. Project Description
           What is your website about? (2-3 sentences) 
-          OK, so looking back on it now, I basically made a text-based adventure where your choices matter, but the result is what aesthetic you are, instead of what ending you got. But at the same time, I guess it's the same as a personality quiz, but with a fancier feel to it, since it's a text-based adventure and not an actual quiz. But it's also a quiz if you think about how your input matters on what result you get, which is similar to what a text-based adventure is... My head slightly hurts now, but it's a text-based adventure aesthetic personality quiz, for a lack of a better title. You read situation, pick an option, and continue until you get your result. accompanied with the character corresponding to it, and a link to the aesthetic itself on the "official" aesthetic wiki. For more information, I would look at the diagram I will somehow figure out how to attach to this project. But yeah, fancy personality quiz with a story attached and characters form said story. Plus a secret result you can get... Somehow.
+          OK, so looking back on it now, I basically made a text-based adventure where your choices matter, but the result is what aesthetic you are, instead of what ending you got. But at the same time, I guess it's the same as a personality quiz, but with a fancier feel to it, since it's a text-based adventure and not an actual quiz. But it's also a quiz if you think about how your input matters on what result you get, which is similar to what a text-based adventure is... My head slightly hurts now, but it's a text-based adventure aesthetic personality quiz, for a lack of a better title. You read situation, pick an option, and continue until you get your result. accompanied with the character corresponding to it, and a link to the aesthetic itself on the "official" aesthetic wiki. For more information, I would look at the diagram I will somehow figure out how to attach to this project. But yeah, fancy personality quiz with a story attached and characters form said story. Plus a secret result you can get... Somehow. (I didn't have time for the secret result).
 
           ## 2. Target Audience
           Who will use your website? Why? 
@@ -114,17 +114,18 @@ PROJECT READ ME DETAILS BELOW!!
            
           ## 8. Future Improvements
           What would you add with more time? 
-          - Character pictures.
+          - Character pictures for results.
           - Result images.
           - More descriptions of questions, choices and results.
           - A progress bar for the quiz. 
           - A list of other results and how many points the user had in each result.
           - A more polished look overall.
+          - Secret result.
 
           ## 9. Credits
-          - Background images from stock adobe, shutterstock(from Google images so there's no watermark behind the questions), iStock, freepik, pinterest, HouseBeautiful, google images, MyFreeTextures
+          - Background images for questions from stock adobe, shutterstock(from Google images so there's no watermark behind the questions), iStock, freepik, pinterest, HouseBeautiful, google images, MyFreeTextures
           - AI assistance as noted in Section 7
-        (Character images would be from Picrew, Doll Divine, or some other dress up game).
-        (Moodboards for aesthetics will be done by me).
+        (Character images would've been from Picrew, Doll Divine, or some other dress up game).
+        (Moodboards for aesthetics would've been done by me).
         (Basic background images will be found by Google, No AI).
         (And of course, links to wikis of the aesthetic will be included).
