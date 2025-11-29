@@ -17,13 +17,20 @@ If you are developing a production application, we recommend using TypeScript wi
 -----------------------------------------------------------------------------------------------------
 Leaving the stuff above because it looks important
 Anyways, this is the react app thing. I have no idea what it is I need to add, but I'm gonna try my best anyways!
+
+For some reason, though, it won't opn so I can't run it to see if it works.
+
 These are the notes for this assignment (also known as me just me copying and pasting things from the slides):
 
 Task: Create a Task Manager App
     Create a React app with multiple components
     Implement add, complete, and delete functionality
     Use useState for task management
+
+
     Use useEffect to save to localStorage
+
+    
     Include task filtering (all, active, completed)
 
 Techincal Specifications:
