@@ -26,11 +26,7 @@ Task: Create a Task Manager App
     Create a React app with multiple components
     Implement add, complete, and delete functionality
     Use useState for task management
-
-
-    Use useEffect to save to localStorage
-
-    
+    Use useEffect to save to localStorage   
     Include task filtering (all, active, completed)
 
 Techincal Specifications:
