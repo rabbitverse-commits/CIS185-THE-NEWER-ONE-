@@ -1,36 +1,4 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-} 
+import { useState } from 'react';
 
 function Counter() {
     // useState returns [currentValue, setterFunction]
@@ -46,7 +14,14 @@ function Counter() {
     );
 }
       const [stateVariable, setStateFunction] = useState(initialValue);
- 
+
+// Examples:
+const [name, setName] = useState("");           // String
+const [age, setAge] = useState(0);             // Number
+const [isActive, setIsActive] = useState(false);  // Boolean
+const [items, setItems] = useState([]);        // Array
+const [user, setUser] = useState({});          // Object
+const [data, setData] = useState(null);        // Null
             
 function UserForm() {
     const [firstName, setFirstName] = useState("");
@@ -303,6 +278,3 @@ useEffect(() => {
     localStorage.setItem('tasks', JSON.stringify(tasks));
 }, [tasks]);
           
-
-
-export default App
