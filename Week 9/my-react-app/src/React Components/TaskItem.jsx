@@ -15,13 +15,6 @@ function Counter() {
 }
       const [stateVariable, setStateFunction] = useState(initialValue);
 
-// Examples:
-const [name, setName] = useState("");           // String
-const [age, setAge] = useState(0);             // Number
-const [isActive, setIsActive] = useState(false);  // Boolean
-const [items, setItems] = useState([]);        // Array
-const [user, setUser] = useState({});          // Object
-const [data, setData] = useState(null);        // Null
             
 function UserForm() {
     const [firstName, setFirstName] = useState("");
