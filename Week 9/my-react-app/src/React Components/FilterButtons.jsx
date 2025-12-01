@@ -1,23 +1,26 @@
-import { useState } from 'react';
-
-function Counter() {
-    // useState returns [currentValue, setterFunction]
-    const [count, setCount] = useState(0);
+function FilterButtons({ currentFilter, setFilter }) {
+    const FilterButton = ({ name }) => (
+        // Uses prop defaults pattern as seen in the Button slide example
+        <button
+            className={currentFilter === name ? 'active-filter' : ''}
+            onClick={() => setFilter(name)}
+        >
+            {name.charAt(0).toUpperCase() + name.slice(1)}
+        </button>
+    );
 
     return (
-        <div>
-            <p>Count: {count}</p>
-            <button onClick={() => setCount(count + 1)}>
-                Increment
-            </button>
+        <div className="filter-buttons">
+            <FilterButton name="all" />
+            <FilterButton name="active" />
+            <FilterButton name="completed" />
         </div>
     );
-}
-      const [stateVariable, setStateFunction] = useState(initialValue);
+} 
 
+export default FilterButtons;
 
-
-
+/* Template AI used from the slides directly.
 function EventExamples() {
     const handleClick = () => {
         console.log("Button clicked!");
@@ -40,29 +43,6 @@ function EventExamples() {
     );
 }
      
-
-function Parent() {
-    const [sharedValue, setSharedValue] = useState("");
-
-    return (
-        <div>
-            <ChildA value={sharedValue} onChange={setSharedValue} />
-            <ChildB value={sharedValue} />
-        </div>
-    );
-}
-
-function ChildA({ value, onChange }) {
-    return <input value={value} onChange={(e) => onChange(e.target.value)} />;
-}
-
-function ChildB({ value }) {
-    return <p>Mirror: {value}</p>;
-}
-    
-import { useState, useEffect } from 'react';
-
-
          
 // Method 1: Default parameters (Recommended)
 function Button({ text = "Click me", color = "blue" }) {
@@ -73,12 +53,14 @@ function Button({ text = "Click me", color = "blue" }) {
     );
 }
 
-// Usage:
-<Button />                     ;{/* Uses defaults */}
-<Button text="Submit" />        ;{/* Custom text */}
-<Button color="red" />          ;{/* Custom color */}
+// localStorage example:
+useEffect(() => {
+    const saved = localStorage.getItem('tasks');
+    if (saved) setTasks(JSON.parse(saved));
+}, []);
 
-
-
-
+useEffect(() => {
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+}, [tasks]);
           
+ */

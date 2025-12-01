@@ -1,6 +1,24 @@
-import { useState } from 'react';
- 
+import TaskItem from './TaskItem';
 
+function TaskList({ tasks, toggleTaskCompletion, deleteTask }) {
+    return (
+        <ul className="task-list">
+            {/* Uses the .map(user => ...) or .map(t => ...) pattern from slides */}
+            {tasks.map(task => (
+                <TaskItem
+                    key={task.id} 
+                    task={task}
+                    toggleTaskCompletion={toggleTaskCompletion}
+                    deleteTask={deleteTask}
+                />
+            ))}
+        </ul>
+    );
+}
+
+export default TaskList;
+
+/* Template AI used from the slides directly.
 function TodoList() {
     const [todos, setTodos] = useState([]);
     const [newTodo, setNewTodo] = useState("");
@@ -23,29 +41,7 @@ function TodoList() {
         </div>
     );
 }
-
-
-
-function Parent() {
-    const [sharedValue, setSharedValue] = useState("");
-
-    return (
-        <div>
-            <ChildA value={sharedValue} onChange={setSharedValue} />
-            <ChildB value={sharedValue} />
-        </div>
-    );
-}
-
-function ChildA({ value, onChange }) {
-    return <input value={value} onChange={(e) => onChange(e.target.value)} />;
-}
-
-function ChildB({ value }) {
-    return <p>Mirror: {value}</p>;
-}
-
-      
+   
 function UserList() {
     const [users, setUsers] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -70,45 +66,8 @@ function UserList() {
             function Timer() {
     const [seconds, setSeconds] = useState(0);
 
-    useEffect(() => {
-        // Set up interval
-        const intervalId = setInterval(() => {
-            setSeconds(s => s + 1);
-        }, 1000);
 
-        // Cleanup function - runs when component unmounts
-        return () => {
-            clearInterval(intervalId);
-        };
-    }, []);
-
-    return <p>Seconds: {seconds}</p>;
 }
-         
-// Method 1: Default parameters (Recommended)
-function Button({ text = "Click me", color = "blue" }) {
-    return (
-        <button style={{ backgroundColor: color }}>
-            {text}
-        </button>
-    );
-}
-
-// Usage:
-<Button />                     ;{/* Uses defaults */}
-<Button text="Submit" />        ;{/* Custom text */}
-<Button color="red" />          ;{/* Custom color */}
-
-            function Card({ title, children }) {
-    return (
-        <div className="card">
-            <h2>{title}</h2>
-            <div className="card-body">
-                {children}  {/* Whatever is between opening/closing tags */}
-            </div>
-        </div>
-    );
-} 
 
 function TodoApp() {
     const [todos, setTodos] = useState([]);
@@ -134,3 +93,4 @@ function TodoApp() {
     );
 }
 
+ */

@@ -1,5 +1,35 @@
-import { useState } from 'react'; 
-            
+import { useState } from 'react';
+
+function TaskInput({ addTask }) {
+    // Uses the 'input' and 'setInput' naming from the slide's TodoApp
+    const [input, setInput] = useState('');
+
+    const handleSubmit = (e) => {
+        // Uses the 'event.preventDefault()' logic from the slides
+        e.preventDefault(); 
+        if (input.trim()) {
+            addTask(input.trim());
+            setInput('');
+        }
+    };
+
+    return (
+        // Uses the form structure and input handling from UserForm/ControlledInput slides
+        <form onSubmit={handleSubmit}>
+            <input
+                type="text"
+                placeholder="Enter a new task..."
+                value={input} 
+                onChange={(e) => setInput(e.target.value)} 
+            />
+            <button type="submit">Add Task</button>
+        </form>
+    );
+}
+
+export default TaskInput;
+
+/* Template AI used from the slides directly.
 function UserForm() {
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
@@ -13,11 +43,12 @@ function UserForm() {
                 onChange={(e) => setFirstName(e.target.value)}
                 placeholder="First Name"
             />
-            {/* More inputs... */}
+            {/* More inputs... }
         </form>
     );
 }
- 
+      
+
 function TodoList() {
     const [todos, setTodos] = useState([]);
     const [newTodo, setNewTodo] = useState("");
@@ -39,29 +70,7 @@ function TodoList() {
             <button onClick={addTodo}>Add</button>
         </div>
     );
-}
-
-function EventExamples() {
-    const handleClick = () => {
-        console.log("Button clicked!");
-    };
-
-    const handleChange = (event) => {
-        console.log("Input value:", event.target.value);
-    };
-
-    const handleSubmit = (event) => {
-        event.preventDefault();  // Prevent form reload
-        console.log("Form submitted!");
-    };
-
-    return (
-        <form onSubmit={handleSubmit}>
-            <input onChange={handleChange} />
-            <button onClick={handleClick}>Click Me</button>
-        </form>
-    );
-}
+} 
            
 function ControlledInput() {
     const [text, setText] = useState("");
@@ -70,11 +79,36 @@ function ControlledInput() {
         <div>
             <input
                 type="text"
-                value={text}  /*{ Controlled by state }*/
+                value={text}  /*{ Controlled by state }
                 onChange={(e) => setText(e.target.value)}
             />
             <p>You typed: {text}</p>
             <p>Characters: {text.length}</p>
         </div>
     );
-} 
+}
+
+function TodoApp() {
+    const [todos, setTodos] = useState([]);
+    const [input, setInput] = useState("");
+
+    useEffect(() => {
+        document.title = `${todos.length} todos`;
+    }, [todos]);
+
+    const addTodo = () => {
+        if (input.trim()) {
+            setTodos([...todos, { id: Date.now(), text: input }]);
+            setInput("");
+        }
+    };
+
+    return (
+        <div>
+            <input value={input} onChange={(e) => setInput(e.target.value)} />
+            <button onClick={addTodo}>Add</button>
+            <ul>{todos.map(t => <li key={t.id}>{t.text}</li>)}</ul>
+        </div>
+    );
+}
+ */
