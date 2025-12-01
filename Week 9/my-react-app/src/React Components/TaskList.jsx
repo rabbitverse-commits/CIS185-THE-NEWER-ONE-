@@ -1,62 +1,5 @@
 import { useState } from 'react';
-
-function Counter() {
-    // useState returns [currentValue, setterFunction]
-    const [count, setCount] = useState(0);
-
-    return (
-        <div>
-            <p>Count: {count}</p>
-            <button onClick={() => setCount(count + 1)}>
-                Increment
-            </button>
-        </div>
-    );
-}
-      const [stateVariable, setStateFunction] = useState(initialValue);
-
-
-            
-function UserForm() {
-    const [firstName, setFirstName] = useState("");
-    const [lastName, setLastName] = useState("");
-    const [email, setEmail] = useState("");
-    const [isSubscribed, setIsSubscribed] = useState(false);
-
-    return (
-        <form>
-            <input
-                value={firstName}
-                onChange={(e) => setFirstName(e.target.value)}
-                placeholder="First Name"
-            />
-            {/* More inputs... */}
-        </form>
-    );
-}
-      
-function UserProfile() {
-    const [user, setUser] = useState({
-        name: "",
-        email: "",
-        age: 0
-    });
-
-    const updateName = (newName) => {
-        // IMPORTANT: Spread operator to keep other properties
-        setUser({
-            ...user,
-            name: newName
-        });
-    };
-
-    return (
-        <input
-            value={user.name}
-            onChange={(e) => updateName(e.target.value)}
-        />
-    );
-}
+ 
 
 function TodoList() {
     const [todos, setTodos] = useState([]);
@@ -81,43 +24,7 @@ function TodoList() {
     );
 }
 
-function EventExamples() {
-    const handleClick = () => {
-        console.log("Button clicked!");
-    };
 
-    const handleChange = (event) => {
-        console.log("Input value:", event.target.value);
-    };
-
-    const handleSubmit = (event) => {
-        event.preventDefault();  // Prevent form reload
-        console.log("Form submitted!");
-    };
-
-    return (
-        <form onSubmit={handleSubmit}>
-            <input onChange={handleChange} />
-            <button onClick={handleClick}>Click Me</button>
-        </form>
-    );
-}
-           
-function ControlledInput() {
-    const [text, setText] = useState("");
-
-    return (
-        <div>
-            <input
-                type="text"
-                value={text}  /*{ Controlled by state }*/
-                onChange={(e) => setText(e.target.value)}
-            />
-            <p>You typed: {text}</p>
-            <p>Characters: {text.length}</p>
-        </div>
-    );
-}
 
 function Parent() {
     const [sharedValue, setSharedValue] = useState("");
@@ -137,35 +44,7 @@ function ChildA({ value, onChange }) {
 function ChildB({ value }) {
     return <p>Mirror: {value}</p>;
 }
-    
-import { useState, useEffect } from 'react';
 
-function Example() {
-    useEffect(() => {
-        // This runs after render
-        console.log("Component rendered!");
-    });
-}
-      
-// Runs on EVERY render
-useEffect(() => {
-    console.log("Every render");
-});
-
-// Runs ONCE on mount (empty dependency array)
-useEffect(() => {
-    console.log("Component mounted");
-}, []);
-
-// Runs when 'count' changes
-useEffect(() => {
-    console.log("Count changed to:", count);
-}, [count]);
-
-// Runs when count OR name changes
-useEffect(() => {
-    console.log("Count or name changed");
-}, [count, name]);
       
 function UserList() {
     const [users, setUsers] = useState([]);
@@ -229,14 +108,7 @@ function Button({ text = "Click me", color = "blue" }) {
             </div>
         </div>
     );
-}
-
-// Usage:
-<Card title="Welcome">
-    <p>This is the card content!</p>
-    <button>Click here</button>
-</Card>
-
+} 
 
 function TodoApp() {
     const [todos, setTodos] = useState([]);
@@ -262,13 +134,3 @@ function TodoApp() {
     );
 }
 
-// localStorage example:
-useEffect(() => {
-    const saved = localStorage.getItem('tasks');
-    if (saved) setTasks(JSON.parse(saved));
-}, []);
-
-useEffect(() => {
-    localStorage.setItem('tasks', JSON.stringify(tasks));
-}, [tasks]);
-          

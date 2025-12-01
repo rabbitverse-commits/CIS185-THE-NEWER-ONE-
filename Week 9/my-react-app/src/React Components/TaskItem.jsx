@@ -15,70 +15,8 @@ function Counter() {
 }
       const [stateVariable, setStateFunction] = useState(initialValue);
 
-            
-function UserForm() {
-    const [firstName, setFirstName] = useState("");
-    const [lastName, setLastName] = useState("");
-    const [email, setEmail] = useState("");
-    const [isSubscribed, setIsSubscribed] = useState(false);
 
-    return (
-        <form>
-            <input
-                value={firstName}
-                onChange={(e) => setFirstName(e.target.value)}
-                placeholder="First Name"
-            />
-            {/* More inputs... */}
-        </form>
-    );
-}
-      
-function UserProfile() {
-    const [user, setUser] = useState({
-        name: "",
-        email: "",
-        age: 0
-    });
 
-    const updateName = (newName) => {
-        // IMPORTANT: Spread operator to keep other properties
-        setUser({
-            ...user,
-            name: newName
-        });
-    };
-
-    return (
-        <input
-            value={user.name}
-            onChange={(e) => updateName(e.target.value)}
-        />
-    );
-}
-
-function TodoList() {
-    const [todos, setTodos] = useState([]);
-    const [newTodo, setNewTodo] = useState("");
-
-    const addTodo = () => {
-        // Add to array - spread existing, add new
-        setTodos([...todos, { id: Date.now(), text: newTodo }]);
-        setNewTodo("");
-    };
-
-    const removeTodo = (id) => {
-        // Remove from array - filter out
-        setTodos(todos.filter(todo => todo.id !== id));
-    };
-
-    return (
-        <div>
-            <input value={newTodo} onChange={(e) => setNewTodo(e.target.value)} />
-            <button onClick={addTodo}>Add</button>
-        </div>
-    );
-}
 
 function EventExamples() {
     const handleClick = () => {
@@ -101,22 +39,7 @@ function EventExamples() {
         </form>
     );
 }
-           
-function ControlledInput() {
-    const [text, setText] = useState("");
 
-    return (
-        <div>
-            <input
-                type="text"
-                value={text}  /*{ Controlled by state }*/
-                onChange={(e) => setText(e.target.value)}
-            />
-            <p>You typed: {text}</p>
-            <p>Characters: {text.length}</p>
-        </div>
-    );
-}
 
 function Parent() {
     const [sharedValue, setSharedValue] = useState("");
@@ -136,74 +59,7 @@ function ChildA({ value, onChange }) {
 function ChildB({ value }) {
     return <p>Mirror: {value}</p>;
 }
-    
-import { useState, useEffect } from 'react';
 
-function Example() {
-    useEffect(() => {
-        // This runs after render
-        console.log("Component rendered!");
-    });
-}
-      
-// Runs on EVERY render
-useEffect(() => {
-    console.log("Every render");
-});
-
-// Runs ONCE on mount (empty dependency array)
-useEffect(() => {
-    console.log("Component mounted");
-}, []);
-
-// Runs when 'count' changes
-useEffect(() => {
-    console.log("Count changed to:", count);
-}, [count]);
-
-// Runs when count OR name changes
-useEffect(() => {
-    console.log("Count or name changed");
-}, [count, name]);
-      
-function UserList() {
-    const [users, setUsers] = useState([]);
-    const [loading, setLoading] = useState(true);
-
-    useEffect(() => {
-        fetch('https://jsonplaceholder.typicode.com/users')
-            .then(response => response.json())
-            .then(data => {
-                setUsers(data);
-                setLoading(false);
-            });
-    }, []);  // Empty array = run once on mount
-
-    if (loading) return <p>Loading...</p>;
-
-    return (
-        <ul>
-            {users.map(user => <li key={user.id}>{user.name}</li>)}
-        </ul>
-    );
-}
-            function Timer() {
-    const [seconds, setSeconds] = useState(0);
-
-    useEffect(() => {
-        // Set up interval
-        const intervalId = setInterval(() => {
-            setSeconds(s => s + 1);
-        }, 1000);
-
-        // Cleanup function - runs when component unmounts
-        return () => {
-            clearInterval(intervalId);
-        };
-    }, []);
-
-    return <p>Seconds: {seconds}</p>;
-}
          
 // Method 1: Default parameters (Recommended)
 function Button({ text = "Click me", color = "blue" }) {
@@ -260,14 +116,4 @@ function TodoApp() {
         </div>
     );
 }
-
-// localStorage example:
-useEffect(() => {
-    const saved = localStorage.getItem('tasks');
-    if (saved) setTasks(JSON.parse(saved));
-}, []);
-
-useEffect(() => {
-    localStorage.setItem('tasks', JSON.stringify(tasks));
-}, [tasks]);
-          
+ 
