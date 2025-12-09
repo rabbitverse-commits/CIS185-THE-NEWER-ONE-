@@ -16,4 +16,6 @@ I knew it had to be something similar to the progress bars we first learned in t
 
 I am VERY THANKFUL for github. I ain't getting rid of my account ANY TIME SOON.
 
-I tried running it but only came across a black screen despite following the code to the letter. So I cross-referenced it with the professors code in Github. I tried to see if the game would run if I changed a few things that were different between my code and the professors, before stopping because my code should work since i was following the video to the letter.
+I tried running it but only came across a black screen despite following the code to the letter. So I cross-referenced it with the professors code in Github. I tried to see if the game would run if I changed a few things that were different between my code and the professors, before stopping at around line 57 because my code should work since I was following the video to the letter.
+
+I asked the AI about that and it turns out that the HTML file wasn't finding the images I had downloaded from the video.

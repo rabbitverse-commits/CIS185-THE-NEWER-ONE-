@@ -6,12 +6,7 @@ window.addEventListener('load', function(){
     let enemies =[];
     let score = 0;
     let gameOver = false;
-    let health = 3; 
-
-     const healthBar = document.getElementById('healthBar');
-    if (healthBar) {
-        healthBar.value = health;
-    }
+    let health = 3;  
 
     class InputHandler {
         constructor(){
@@ -56,7 +51,7 @@ window.addEventListener('load', function(){
             this.fps = 20;
             this.frameTimer = 0;
             this.frameInterval = 1000/this.fps;
-            
+
             this.speed = 0;
             this.vy = 0;
             this.weight = 1;
@@ -72,10 +67,7 @@ window.addEventListener('load', function(){
                 const distance = Math.sqrt(dx * dx + dy * dy);
                 if (distance < enemy.width/2 + this.width/2){
                     if (!enemy.hit){
-                        health --;
-                    if (healthBar) {
-                            healthBar.value = health;
-                        }
+                        health --; 
                     }
                     enemy.hit = true;
                     if (health <= 0) {
@@ -207,6 +199,21 @@ window.addEventListener('load', function(){
         context.fillText('Score: ' + score, 20, 50);
         context.fillStyle = 'white';
         context.fillText('Score: ' + score, 22, 52);
+        const barWidth = 150;
+        const barHeight = 20;
+        const barX = canvas.width - barWidth - 20;
+        const barY = 30;
+
+        context.fillStyle = 'red';
+        context.fillRect(barX, barY, barWidth, barHeight);
+
+        const currentHealthWidth = (health / 3) * barWidth; 
+        context.fillStyle = 'green';
+        context.fillRect(barX, barY, currentHealthWidth, barHeight);
+
+        context.fillStyle = 'white';
+        context.font = '16px Helvetica';
+        context.fillText(`Health: ${health}/3`, barX + barWidth / 2 - 25, barY + barHeight / 2 + 5);
         if (gameOver){
             context.textAlign = 'center';
             context.fillStyle = 'black';
