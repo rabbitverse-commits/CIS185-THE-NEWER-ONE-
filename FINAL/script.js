@@ -6,6 +6,12 @@ window.addEventListener('load', function(){
     let enemies =[];
     let score = 0;
     let gameOver = false;
+    let health = 3; 
+
+     const healthBar = document.getElementById('healthBar');
+    if (healthBar) {
+        healthBar.value = health;
+    }
 
     class InputHandler {
         constructor(){
@@ -57,9 +63,18 @@ window.addEventListener('load', function(){
             enemies.forEach(enemy => {
                 const dx = (enemy.x + enemy.width/2) - (this.x + this.width/2);
                 const dy = (enemy.y + enemy.height/2) - (this.y + this.height/2);
-                const distance = Math.sqrt(dx * dy + dy * dy);
+                const distance = Math.sqrt(dx * dx + dy * dy);
                 if (distance < enemy.width/2 + this.width/2){
-                    gameOver = true;
+                    if (!enemy.hit){
+                        health --;
+                    if (healthBar) {
+                            healthBar.value = health;
+                        }
+                    }
+                    enemy.hit = true;
+                    if (health <= 0) {
+                        gameOver = true;
+                    }
                 }
             });
             //Sprite Animation
@@ -140,13 +155,14 @@ window.addEventListener('load', function(){
             this.frameInterval = 1000/this.fps;
             this.speed = 8;
             this.markedForDeletion = false;
+            this.hit = false;
         }
         draw(context){ 
             context.drawImage(this.image, this.frameX * this.width, 0, this.width, this.height, this.x, this.y, this.width, this.height);
         }
         update(deltaTime){
             if (this.frameTimer > this.frameInterval){
-                if (this.frameX < this.maxFrame) this.FrameX = 0;
+                if (this.frameX < this.maxFrame) this.frameX = 0;
                 else this.frameX++;
                 this.frameTimer = 0;
             } else {
@@ -157,11 +173,14 @@ window.addEventListener('load', function(){
                 this.markedForDeletion = true;
                 score++;
             }
+            if (this.hit) {
+                this.markedForDeletion = true;
+            }
         }
     }
 
     function handleEnemies(deltaTime){
-        if (enemyTime > enemyInterval + randomEnemyInterval){
+        if (enemyTimer > enemyInterval + randomEnemyInterval){
             enemies.push(new Enemy(canvas.width, canvas.height));
             console.log(enemies);
             randomEnemyInterval = Math.random() * 1000 + 500;
