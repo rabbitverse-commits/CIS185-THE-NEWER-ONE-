@@ -1,5 +1,5 @@
 window.addEventListener('load', function(){
-    const canvas = this.document.getElementById('canvas1');
+    const canvas = document.getElementById('canvas1');
     const ctx = canvas.getContext('2d');
     canvas.width = 800;
     canvas.height = 720;
@@ -30,7 +30,9 @@ window.addEventListener('load', function(){
                     e.key === 'ArrowUp' ||
                     e.key === 'ArrowLeft' ||
                     e.key === 'ArrowRight'){
-                    this.keys.splice(this.keys.indexOf(e.key), 1);
+                    //this.keys.splice(this.keys.indexOf(e.key), 1);
+                    const index = this.keys.indexOf(e.key);
+                    if (index > -1) this.keys.splice(index, 1);
                 }
             });
         }
@@ -42,15 +44,19 @@ window.addEventListener('load', function(){
             this.gameHeight = gameHeight;
             this.width = 200;
             this.height = 200;
+
             this.x = 0;
             this.y = this.gameHeight - this.height;
             this.image = document.getElementById('playerImage');
+
             this.frameX = 0;
             this.maxFrame = 8;
             this.frameY = 0;
+
             this.fps = 20;
             this.frameTimer = 0;
             this.frameInterval = 1000/this.fps;
+            
             this.speed = 0;
             this.vy = 0;
             this.weight = 1;

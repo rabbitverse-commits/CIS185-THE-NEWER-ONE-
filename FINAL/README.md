@@ -15,3 +15,5 @@ I knew it had to be something similar to the progress bars we first learned in t
 (<progress value="75" max="100">75% Complete</progress>/<meter value="8" min="0" max="10">8 out of 10</meter>)
 
 I am VERY THANKFUL for github. I ain't getting rid of my account ANY TIME SOON.
+
+I tried running it but only came across a black screen despite following the code to the letter. So I cross-referenced it with the professors code in Github. I tried to see if the game would run if I changed a few things that were different between my code and the professors, before stopping because my code should work since i was following the video to the letter.
