@@ -214,6 +214,7 @@ window.addEventListener('load', function(){
         context.fillStyle = 'white';
         context.font = '16px Helvetica';
         context.fillText(`Health: ${health}/3`, barX + barWidth / 2 - 25, barY + barHeight / 2 + 5);
+        
         if (gameOver){
             context.textAlign = 'center';
             context.fillStyle = 'black';
