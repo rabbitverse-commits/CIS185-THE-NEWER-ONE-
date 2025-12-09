@@ -5,6 +5,7 @@ window.addEventListener('load', function(){
     canvas.height = 720;
     let enemies =[];
     let score = 0;
+    let gameOver = false;
 
     class InputHandler {
         constructor(){
@@ -48,15 +49,19 @@ window.addEventListener('load', function(){
             this.vy = 0;
             this.weight = 1;
         }
-        draw(context){
-            context.strokeStyle = 'white';
-            context.strokeRect(this.x, this.y, this.width, this.height);
-            context.beginPath();
-            context.arc(this.x + this.width/2, this.y + this.height/2, this.width/2, 0, Math.PI * 2);
-            context.stroke();
+        draw(context){ 
             context.drawImage(this.image, this.frameX * this.width, this.frameY * this.height, this.width, this.height, this.x, this.y, this.width, this.height);
         }
-        update(input, deltaTime){
+        update(input, deltaTime, enemies){
+            //Collision Detection
+            enemies.forEach(enemy => {
+                const dx = (enemy.x + enemy.width/2) - (this.x + this.width/2);
+                const dy = (enemy.y + enemy.height/2) - (this.y + this.height/2);
+                const distance = Math.sqrt(dx * dy + dy * dy);
+                if (distance < enemy.width/2 + this.width/2){
+                    gameOver = true;
+                }
+            });
             //Sprite Animation
             if (this.frameTimer > this.frameInterval){
                 if (this.frameX >= this.maxFrame) this.frameX = 0;
@@ -67,11 +72,11 @@ window.addEventListener('load', function(){
             }
             
             //Controls
-            if (input.keys.idexOf('ArrowRight') > -1){
+            if (input.keys.indexOf('ArrowRight') > -1){
                 this.speed = 5;
-            } else if(input.keys.idexOf('ArrowLeft') > -1) {
+            } else if(input.keys.indexOf('ArrowLeft') > -1) {
                 this.speed = -5;
-            } else if(input.keys.idexOf('ArrowUp') > -1 && this.onGround()) {
+            } else if(input.keys.indexOf('ArrowUp') > -1 && this.onGround()) {
                 this.vy -= 32;
             } else {
                 this.speed = 0;
@@ -134,14 +139,9 @@ window.addEventListener('load', function(){
             this.frameTimer = 0;
             this.frameInterval = 1000/this.fps;
             this.speed = 8;
-            thismarkedForDeletion = false;
+            this.markedForDeletion = false;
         }
-        draw(context){
-            context.strokeStyle = 'white';
-            context.strokeRect(this.x, this.y, this.width, this.height);
-            context.beginPath();
-            context.arc(this.x + this.width/2, this.y + this.height/2, this.width/2, 0, Math.PI * 2);
-            context.stroke();
+        draw(context){ 
             context.drawImage(this.image, this.frameX * this.width, 0, this.width, this.height, this.x, this.y, this.width, this.height);
         }
         update(deltaTime){
@@ -182,6 +182,13 @@ window.addEventListener('load', function(){
         context.fillText('Score: ' + score, 20, 50);
         context.fillStyle = 'white';
         context.fillText('Score: ' + score, 22, 52);
+        if (gameOver){
+            context.textAlign = 'center';
+            context.fillStyle = 'black';
+            context.fillText('GAME OVER, try again!', canvas.width/2, 200);
+             context.fillStyle = 'white';
+            context.fillText('GAME OVER, try again!', canvas.width/2 + 2, 202);
+        }
     }
 
     const input = new InputHandler();
@@ -200,10 +207,10 @@ window.addEventListener('load', function(){
         background.draw(ctx);
         //background.update();
         player.draw(ctx);
-        player.update(input, deltaTime);
+        player.update(input, deltaTime, enemies);
         handleEnemies(deltaTime);
         displayStatusText(ctx);
-        requestAnimationFrame(animate);
+        if (!gameOver) requestAnimationFrame(animate);
     }
     animate(0);
 });
